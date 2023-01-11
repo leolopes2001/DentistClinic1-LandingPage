@@ -1,7 +1,7 @@
 import { Slide, Slider, SliderProps } from '..';
 import { doctors_cards_slider } from '../../../components-mock.json';
 import CardService from '../../../pages/LandingPage/ClinicServices/CardService';
-import { CardVideo } from './style';
+
 import ImageSlide1 from '../../../assets/svg/slider/img1.png';
 import ImageSlide2 from '../../../assets/svg/slider/img2.png';
 import ImageSlide3 from '../../../assets/svg/slider/img3.webp';
