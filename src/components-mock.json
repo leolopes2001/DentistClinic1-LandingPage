@@ -1,0 +1,85 @@
+{
+  "pacients_cards_slider": [
+    {
+      "name": "leo"
+    },
+    {
+      "name": "fra"
+    },
+    {
+      "name": "lu"
+    },
+    {
+      "name": "Cesar"
+    },
+    {
+      "name": "Luiza"
+    },
+    {
+      "name": "Joa"
+    },
+    {
+      "name": "Amanda"
+    },
+    {
+      "name": "Thiago"
+    }
+  ],
+  "doctors_cards_slider": [
+    {
+      "name": "DC1"
+    },
+    {
+      "name": "DC2"
+    },
+    {
+      "name": "DC3"
+    },
+    {
+      "name": "DC4"
+    },
+    {
+      "name": "DC5"
+    },
+    {
+      "name": "DC6"
+    }
+  ],
+  "patients_opinion": [
+    {
+      "id": 0,
+      "stars": 5,
+      "name": "Leo",
+      "job": "Programador",
+      "opinion": "Marcar uma consulta é muito fácil porque pode ser feito online então pode economizar muita coisa e ser feito com mais clareza."
+    },
+    {
+      "id": 1,
+      "stars": 5,
+      "name": "William Smith",
+      "job": "Fotográfo",
+      "opinion": "O local da clínica é muito confortável e os serviços prestados são ótimo e excelente estrutura para nós pacientes."
+    },
+    {
+      "id": 2,
+      "stars": 5,
+      "name": "Nikolas Nolan",
+      "job": "Gerente comercial",
+      "opinion": "Os dentistas são muito simpáticos,a recepção é incrível, não tiver problema nenhum durante o tratamento, agendam rápido."
+    },
+    {
+      "id": 3,
+      "stars": 5,
+      "name": "Nikolas Nolan",
+      "job": "Gerente comercial",
+      "opinion": "Os dentistas são muito simpáticos,a recepção é incrível, não tiver problema nenhum durante o tratamento, agendam rápido."
+    },
+    {
+      "id": 4,
+      "stars": 5,
+      "name": "Nikolas Nolan",
+      "job": "Gerente comercial",
+      "opinion": "Os dentistas são muito simpáticos,a recepção é incrível, não tiver problema nenhum durante o tratamento, agendam rápido."
+    }
+  ]
+}

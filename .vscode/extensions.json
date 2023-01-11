@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "editorconfig.editorconfig",
+      "jonkwheeler.styled-components-snippets",
+      "styled-components.vscode-styled-components"
+  ]
+}
