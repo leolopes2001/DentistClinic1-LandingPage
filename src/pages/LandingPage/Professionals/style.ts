@@ -10,9 +10,9 @@ export const StyledSection = styled.section`
       display: flex;
       align-items: center;
       justify-content: space-between;
-
+      
       li {
-        position: relative;
+        position: relative; 
         min-width: 260px;
         max-width: 260px;
         min-height: 340px;
@@ -59,16 +59,18 @@ export const GridHeader = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5 1fr 1fr;
+  margin-top: ${convertToRem(13)};
   width: 100%;
-  margin-top: ${convertToRem(43)};
   padding: 1rem;
   & > .general_clinic_title {
     margin-top: 1rem;
   }
-
+  
   display: grid;
-
+  
   @media (min-width: 1200px) {
+    padding: 0;
+    margin-top: ${convertToRem(43)};
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 100px 100px;
 
@@ -76,6 +78,10 @@ export const GridHeader = styled.div`
       width: 100%;
       margin-top: 0;
       line-height: normal;
+      
+      display: flex;
+      justify-content: end;
+
     }
 
     p {

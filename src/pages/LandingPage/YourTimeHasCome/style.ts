@@ -2,16 +2,29 @@ import styled from 'styled-components';
 import convertToRem from '../../../utils/convertToRem';
 
 export const StyledSection = styled.section`
-background-color: ${({theme}) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.background};
   overflow: hidden;
   > .content {
     min-width: 0;
 
+ 
     @media (min-width: 1000px) {
       display: grid;
       grid-template-columns: 600px 1.2fr;
       grid-template-rows: 1fr;
+    }
+    
+    @media (min-width: 1200px) {
       gap: 5rem;
+      .general_clinic_title {
+        min-width: 560px;
+      }
+    }
+    @media (max-width: 1260px) {
+      .general_clinic_title {
+        min-width: 500px;
+   
+      }
     }
   }
 
@@ -177,19 +190,17 @@ background-color: ${({theme}) => theme.colors.background};
 export const GridHeader = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5 1fr 1fr;
+  grid-template-rows: 0.5 1fr 1fr 1fr;
   width: 100%;
   margin-top: ${convertToRem(43)};
   padding: 1rem;
   & > .general_clinic_title {
     margin-top: 1rem;
     width: 100%;
-    min-width: 600px;
     height: auto;
-    
-    @media (max-width: 1260px){
-      min-width: 500px;
 
-    }
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 `;

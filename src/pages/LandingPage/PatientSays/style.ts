@@ -12,13 +12,14 @@ export const GridHeader = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 0.5 1fr 1fr;
   width: 100%;
-  margin-top: ${convertToRem(43)};
   padding: 1rem;
   & > .general_clinic_title {
     margin-top: 1rem;
   }
-
+  
   @media (min-width: 1200px) {
+    padding: 0rem;
+    margin-top: ${convertToRem(43)};
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 1fr;
     margin-bottom: 5rem;

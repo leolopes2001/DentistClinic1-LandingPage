@@ -18,21 +18,23 @@ const Header = () => {
             (37) 99119-7849
           </Title>
 
-          <Link variant='navLink' href=''>
-            Home
-          </Link>
-          <Link variant='navLink' href=''>
-            Tratamentos
-          </Link>
-          <Link variant='navLink' href=''>
-            Dentista
-          </Link>
-          <Link variant='navLink' href=''>
-            Agendamentos
-          </Link>
-          <Link variant='navLink' href=''>
-            Como chegar
-          </Link>
+          <div>
+            <Link variant='navLink' href=''>
+              Home
+            </Link>
+            <Link variant='navLink' href=''>
+              Tratamentos
+            </Link>
+            <Link variant='navLink' href=''>
+              Dentista
+            </Link>
+            <Link variant='navLink' href=''>
+              Agendamentos
+            </Link>
+            <Link variant='navLink' href=''>
+              Como chegar
+            </Link>
+          </div>
         </NavStyled>
       ) : (
         <>

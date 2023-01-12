@@ -35,7 +35,11 @@ const Benefits = () => {
             ))}
           </ul>
         ) : (
-          <BenefitsSlider />
+          <ul className='list_servies'>
+          {benefits.map((el) => (
+            <CardBenefit key={el.id} {...(el as ICardBenefit)} />
+          ))}
+        </ul>
         )}
       </div>
     </SectionStyled>

@@ -7,14 +7,14 @@ export const GridHeader = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 0.5 1fr 1fr;
   width: 100%;
-  margin-top: ${convertToRem(43)};
   padding: 1rem;
-
+  
   & > .general_clinic_title {
     margin-top: 1rem;
   }
-
+  
   @media (min-width: 1200px) {
+    margin-top: ${convertToRem(43)};
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 1fr;
 
@@ -32,12 +32,22 @@ export const GridHeader = styled.div`
 export const SectionStyled = styled.section`
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color: ${({theme}) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.background};
   .list_servies {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 4rem;
+  }
+
+  @media (max-width: 1200px) {
+    .list_servies {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
   }
 `;

@@ -1,10 +1,15 @@
 import { Slide, Slider, SliderProps } from '..';
-import CardBenefit from '../../../pages/LandingPage/Benefits/CardBenefit';
+import CardBenefit, {
+  ICardBenefit,
+} from '../../../pages/LandingPage/Benefits/CardBenefit';
+import { benefits } from '../../../../src/components-mock.json';
+
 const BenefitsSlider = () => {
   const settings: SliderProps = {
     spaceBetween: 50,
     navigation: true,
     pagination: { clickable: true },
+    centeredSlides: true,
     loop: true,
     breakpoints: {
       200: {
@@ -20,18 +25,13 @@ const BenefitsSlider = () => {
   };
 
   return (
-    // <Slider variant='type1' settings={settings}>
-    //   <Slide>
-    //     <CardBenefit />
-    //   </Slide>
-    //   <Slide>
-    //     <CardBenefit />
-    //   </Slide>
-    //   <Slide>
-    //     <CardBenefit />
-    //   </Slide>
-    // </Slider>
-    <></>
+    <Slider variant='type1' settings={settings}>
+      {benefits.map((el) => (
+        <Slide key={el.id}>
+          <CardBenefit {...(el as ICardBenefit)} />
+        </Slide>
+      ))}
+    </Slider>
   );
 };
 

@@ -16,6 +16,10 @@ export const HeaderStyled = styled.header`
   @media (min-width: 1000px) {
     background-color: ${({ theme }) => theme.colors.background};
   }
+
+  @media (min-width: 1200px) {
+    background-color: #f5fffd;
+  }
 `;
 
 export const Container = styled.div`
@@ -25,22 +29,29 @@ export const Container = styled.div`
 export const NavStyled = styled.nav`
   background-color: ${({ theme }) => theme.colors.background};
   display: flex;
-  gap: ${convertToRem(50)};
+  justify-content: space-between;
   align-items: center;
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: end;
+  }
 
   h6 {
     padding-right: ${convertToRem(130)};
     display: flex;
     align-items: center;
     gap: 1rem;
+  }
 
-   
+  @media (min-width: 1200px) {
+    background-color: #f5fffd;
   }
 `;
 
 export const Logo = styled.div`
   display: flex;
   align-items: center;
-
-  
 `;

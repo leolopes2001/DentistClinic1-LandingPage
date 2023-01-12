@@ -76,6 +76,11 @@ const LinkVariant = {
     font-size: 18px;
     line-height: 24px;
     color: ${({ theme }) => theme.colors.primary};
+
+    @media (max-width: 1200px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
   `,
 };
 

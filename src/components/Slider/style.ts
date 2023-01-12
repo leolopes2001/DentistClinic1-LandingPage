@@ -139,7 +139,7 @@ const SliderWrapVariant = {
     position: relative;
     max-width: 600px;
     left: -2rem;
-   
+
     .video_card {
       min-width: 220px;
       height: 400px;
@@ -160,17 +160,15 @@ const SliderWrapVariant = {
       align-items: center;
       justify-content: center;
 
-      
       padding-left: -5rem;
 
       -webkit-transform: scaleX(-1) translateX(-1rem);
       transform: scaleX(-1) translateX(-1rem);
     }
 
-    .swiper-slide{
+    .swiper-slide {
       min-width: 220px;
     }
-   
   `,
 
   type4: css`
@@ -182,13 +180,14 @@ const SliderWrapVariant = {
       width: 90%;
       margin-left: auto;
       margin-right: auto;
+        
     }
 
     .swiper-slide {
       display: flex;
       justify-content: center;
       height: 400px;
-     width: 100%;
+      width: 100%;
 
       & > div {
         min-height: 100%;
@@ -218,20 +217,28 @@ const SliderWrapVariant = {
     position: relative;
 
     .swiper {
-      height: 290px;
+      
+      max-height: 265px;
+      min-height: 265px;
+      
+      
       width: 100%;
       margin-left: auto;
       margin-right: auto;
       display: flex;
       align-items: center;
+      
       margin-top: 1rem;
+      
+      margin-top: 0;
       margin-bottom: 1rem;
       padding-bottom: 4rem;
       justify-content: center;
       padding: 0 1rem;
-
+      
       @media (min-width: 900px) {
-        height: 390px;
+        min-height: 290px;
+        min-height: 390px;
         padding-bottom: 6rem;
       }
     }
@@ -252,6 +259,9 @@ const SliderWrapVariant = {
         height: 203px;
         border-radius: 20px;
         padding: 1rem;
+
+
+
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -299,7 +309,7 @@ const SliderWrapVariant = {
           min-width: 467px;
           max-width: 467px;
           height: 321px;
-        
+
           p {
             max-width: 100%;
             margin: 0;
@@ -309,7 +319,6 @@ const SliderWrapVariant = {
           .patient img {
             width: 60px;
             height: 60px;
-        
           }
 
           .starts {
