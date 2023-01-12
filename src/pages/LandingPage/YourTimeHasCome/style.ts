@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import convertToRem from '../../../utils/convertToRem';
 
 export const StyledSection = styled.section`
+padding-top: 5rem;
   background-color: ${({ theme }) => theme.colors.background};
   overflow: hidden;
   > .content {
@@ -12,26 +13,10 @@ export const StyledSection = styled.section`
       min-width: 270px;
     }
 
-    /* @media (min-width: 365px) {
-      .general_clinic_title {
-        min-width: 400px;
-        max-width: 400px;
-      }
-    } */
-    /* @media (min-width: 580px) {
-      .general_clinic_title {
-        min-width: 600px;
-        max-width: 600px;
-      }
-    } */
-
     @media (min-width: 1000px) {
       display: grid;
       grid-template-columns: 600px 1.2fr;
       grid-template-rows: 1fr;
-      /* .general_clinic_title {
-        min-width: 400px;
-      } */
     }
 
     @media (min-width: 1200px) {

@@ -20,7 +20,7 @@ const Professionals = () => {
   const [width] = useWindowSize();
 
   return (
-    <StyledSection>
+    <StyledSection id='dentists'>
       <div className='content'>
         <GridHeader>
           <div>

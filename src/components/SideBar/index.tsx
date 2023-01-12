@@ -49,7 +49,7 @@ const SideBar = ({ variant }: ISideBarProps) => {
     return () => clearDocument();
   }, [isSideBarOpen]);
 
-  if (width > 1000) return null;
+  if (width > 1200) return null;
 
   return (
     <>

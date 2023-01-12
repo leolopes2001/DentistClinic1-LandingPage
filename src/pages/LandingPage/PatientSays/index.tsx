@@ -22,7 +22,7 @@ const PatientSay = () => {
           <Title tag='h3' variant='title3' className='general_clinic_title'>
             Nosso serviços aos olhos dos pacientes
           </Title>
-          <Text variant='text2' data-aos='fade-left'>
+          <Text variant='text2' data-aos='fade-left' >
             Opiniões de nossos pacientes que passaram por serviços de saúde em
             nossa clínica.
           </Text>

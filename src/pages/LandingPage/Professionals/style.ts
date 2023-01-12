@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import convertToRem from '../../../utils/convertToRem';
 
 export const StyledSection = styled.section`
+padding-top: 2rem;
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: ${({ theme }) => theme.colors.background};

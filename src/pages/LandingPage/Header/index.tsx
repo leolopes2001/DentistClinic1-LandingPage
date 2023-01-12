@@ -19,19 +19,19 @@ const Header = () => {
           </Title>
 
           <div>
-            <Link variant='navLink' href=''>
+            <Link variant='navLink' href='#home'>
               Home
             </Link>
-            <Link variant='navLink' href=''>
+            <Link variant='navLink' href='#services'>
               Tratamentos
             </Link>
-            <Link variant='navLink' href=''>
+            <Link variant='navLink' href='#dentists'>
               Dentista
             </Link>
-            <Link variant='navLink' href=''>
+            <Link variant='navLink' href='#schedules'>
               Agendamentos
             </Link>
-            <Link variant='navLink' href=''>
+            <Link variant='navLink' href='#footer'>
               Como chegar
             </Link>
           </div>

@@ -40,6 +40,8 @@ export const GridHeader = styled.div`
   }
 
   @media (min-width: 1200px) {
+    position: relative;
+    z-index: 999;
     padding: 0;
     margin-top: ${convertToRem(43)};
     grid-template-columns: 1fr 1fr;
@@ -59,7 +61,7 @@ export const GridHeader = styled.div`
 
 export const SectionStyled = styled.section`
   overflow: hidden;
-
+  padding-top: 2rem;
   background-color: ${({ theme }) => theme.colors.background};
 
   .list_servies {

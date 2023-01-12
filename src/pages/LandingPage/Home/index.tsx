@@ -13,7 +13,7 @@ import useWindowSize from '../../../hooks/useWindowSize';
 const Home = () => {
   const [width] = useWindowSize();
   return (
-    <HomeStyled>
+    <HomeStyled id='home'>
       <Container className='content'> 
         {width > 1200 && (
           <Logo data-aos='fade-right' style={{ paddingTop: '4rem' }}>

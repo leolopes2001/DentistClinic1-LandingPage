@@ -31,7 +31,8 @@ export const SideBarStyled = styled.aside<{
     height: 100%;
     gap: 4rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-top: 40%;
 
     .animation {
       animation: ${fade} 800ms;

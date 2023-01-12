@@ -33,7 +33,6 @@ export default createGlobalStyle`
         margin: 0 auto;
         padding: ${convertToRem(15)};
         position: relative;
-       
     }
 
  

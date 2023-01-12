@@ -2,6 +2,7 @@ export default {
   title: 'default',
   colors: {
     primary: '#DE0D1D',
+   
 
     secondary: '#20C5AF',
 

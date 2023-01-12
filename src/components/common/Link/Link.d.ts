@@ -5,4 +5,5 @@ export interface ILinkProps {
   variant: 'primary' | 'navLink' | 'clinicService' | 'benefit';
   children: ReactNode;
   className?: string;
+  onClick?: () => void;
 }

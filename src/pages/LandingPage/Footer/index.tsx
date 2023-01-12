@@ -5,7 +5,7 @@ import CompanyLogo from '../../../assets/svg/agendaConsultaLogo.svg';
 
 const Footer = () => {
   return (
-    <FooterStyled>
+    <FooterStyled id='footer'>
       <div className='content'>
         <section className='services'>
           <h3>Serviços</h3>

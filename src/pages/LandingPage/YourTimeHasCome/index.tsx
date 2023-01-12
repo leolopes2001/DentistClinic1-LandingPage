@@ -15,7 +15,7 @@ const YourTimeHasCome = () => {
   const [width] = useWindowSize();
 
   return (
-    <StyledSection>
+    <StyledSection id='schedules'>
       <div className='content'>
         <div className='container_img'>
           <div className='box_img' data-aos='fade-up'>

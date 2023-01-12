@@ -9,7 +9,7 @@ const ClinicService = () => {
   const [width] = useWindowSize();
 
   return (
-    <SectionStyled>
+    <SectionStyled id="services">
       <div className='content'>
         <GridHeader>
           <div>
