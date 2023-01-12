@@ -15,8 +15,9 @@ export const GridHeader = styled.div`
   padding: 1rem;
   & > .general_clinic_title {
     margin-top: 1rem;
+    width: 320px;
   }
-  
+
   @media (min-width: 1200px) {
     padding: 0rem;
     margin-top: ${convertToRem(43)};
@@ -30,6 +31,8 @@ export const GridHeader = styled.div`
       padding: 0;
       margin: 0;
       vertical-align: baseline;
-    } 
-   } 
+
+      width: 685px;
+    }
+  }
 `;

@@ -64,7 +64,6 @@ const TitleVariant = {
       font-weight: 700;
       font-size: 56px;
       line-height: 72px;
-      width: 685px;
     }
   `,
 
@@ -127,17 +126,30 @@ export const Wrapper = styled.div`
   }
 
   > .line {
-    width: 50%;
-    max-width: 500px;
+    min-width: 240px;
+    width: 60%;
+    max-width: 240px;
     margin-top: 10px;
     height: 1px;
     background-color: ${({ theme }) => theme.colors.primary};
+
+    @media (min-width: 600px){
+      min-width: 250px;
+      width: 50%;
+      max-width: 250px;
+    }
+
+    @media (min-width: 1200px) {
+      min-width: 300px;
+      width: 65%;
+      max-width: 600px;
+    }
   }
 `;
 
 export const BaseTitle = styled(MaskTitle)`
-display: inline-flex;
-align-items: center;
-justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   ${({ variant }) => TitleVariant[variant]}
 `;

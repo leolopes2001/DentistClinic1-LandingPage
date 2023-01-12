@@ -18,7 +18,7 @@ const ClinicService = () => {
             </Title>
           </div>
           <Title tag='h3' variant='title3' className='general_clinic_title'>
-            Veja nossos tratamentos
+            Veja os nossos tratamentos
           </Title>
           <Text variant='text2' data-aos='fade-left'>
             Cuidamos da sua saúde bucal e oferecemos todos os tratamentos

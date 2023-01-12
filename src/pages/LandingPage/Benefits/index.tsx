@@ -8,8 +8,6 @@ import { GridHeader, SectionStyled } from './style';
 import { benefits } from '../../../components-mock.json';
 
 const Benefits = () => {
-  const [width] = useWindowSize();
-
   return (
     <SectionStyled>
       <div className='content'>
@@ -28,19 +26,11 @@ const Benefits = () => {
           </Text>
         </GridHeader>
 
-        {width > 1200 ? (
-          <ul className='list_servies'>
-            {benefits.map((el) => (
-              <CardBenefit key={el.id} {...(el as ICardBenefit)} />
-            ))}
-          </ul>
-        ) : (
-          <ul className='list_servies'>
+        <ul className='list_servies'>
           {benefits.map((el) => (
             <CardBenefit key={el.id} {...(el as ICardBenefit)} />
           ))}
         </ul>
-        )}
       </div>
     </SectionStyled>
   );

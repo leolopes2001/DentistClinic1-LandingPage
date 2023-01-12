@@ -29,7 +29,7 @@ export const TextVariant = {
 
   text2: css`
     width: 100%;
-    max-width: 297px;
+    /* max-width: 297px; */
 
     font-weight: 400;
     font-size: 12px;
@@ -41,19 +41,12 @@ export const TextVariant = {
     text-align: justify;
     display: inline-flex;
 
-    /* @media (max-width: 320px) {
-      max-width: 267px;
-    }
-    @media (max-width: 300px) {
-      max-width: 270px;
-    } */
-
     @media (min-width: 1200px) {
       font-weight: 400;
       font-size: 20px;
       line-height: 32px;
       color: #49545a;
-      max-width: 482px;
+      /* max-width: 482px; */
       display: flex;
       align-items: flex-end;
     }

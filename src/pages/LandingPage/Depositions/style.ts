@@ -23,11 +23,32 @@ export const GridHeader = styled.div`
   grid-template-rows: 0.5 1fr 1fr;
   width: 100%;
   padding: 1rem;
+
+  p {
+    max-width: 222px;
+  }
+
+  @media (min-width: 300px) {
+    P {
+      max-width: 262px;
+    }
+  }
+
   & > .general_clinic_title {
     margin-top: 1rem;
   }
 
   @media (max-width: 1000px) {
     margin-bottom: 1.2rem;
+  }
+
+  @media (min-width: 1200px) {
+    p {
+      max-width: 600px;
+    }
+
+    .general_clinic_title {
+      margin-left: 2rem;
+    }
   }
 `;

@@ -4,15 +4,15 @@ import convertToRem from '../../../utils/convertToRem';
 export const StyledSection = styled.section`
   overflow-x: hidden;
   overflow-y: hidden;
-  background-color: ${({theme}) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.background};
   & > .content {
     .doctors_list {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      
+
       li {
-        position: relative; 
+        position: relative;
         min-width: 260px;
         max-width: 260px;
         min-height: 340px;
@@ -53,6 +53,10 @@ export const StyledSection = styled.section`
       }
     }
   }
+
+  @media (min-width: 1200px){
+    margin-bottom: 2rem;
+  }
 `;
 
 export const GridHeader = styled.div`
@@ -64,24 +68,42 @@ export const GridHeader = styled.div`
   padding: 1rem;
   & > .general_clinic_title {
     margin-top: 1rem;
+    min-width: 250px;
+    max-width: 250px;
   }
-  
-  display: grid;
-  
+
+  p {
+    max-width: 220px;
+  }
+
+  @media (min-width: 400px) {
+    & > .general_clinic_title {
+      display: flex;
+      justify-content: flex-start;
+      min-width: 400px;
+      max-width: 400px;
+    }
+
+    p {
+      min-width: 400px;
+    }
+  }
+
   @media (min-width: 1200px) {
     padding: 0;
     margin-top: ${convertToRem(43)};
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 100px 100px;
-
+   
     .general_clinic_title {
       width: 100%;
       margin-top: 0;
       line-height: normal;
-      
       display: flex;
+      min-width: 685px;
       justify-content: end;
-
+      max-width: 800px;
+      justify-self: end;
     }
 
     p {

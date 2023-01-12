@@ -9,11 +9,36 @@ export const GridHeader = styled.div`
   width: 100%;
   margin-top: ${convertToRem(13)};
   padding: 1rem;
-  
+  min-width: 400px;
+
   & > .general_clinic_title {
     margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
   }
-  
+
+  & > p {
+    max-width: 230px;
+    vertical-align: baseline;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 314px) {
+      max-width: 280px;
+    }
+    @media (min-width: 324px) {
+      max-width: 290px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 500px;
+    }
+  }
+  @media (min-width: 480px) {
+    & > .general_clinic_title {
+      min-width: 450px;
+    }
+  }
+
   @media (min-width: 1200px) {
     padding: 0;
     margin-top: ${convertToRem(43)};
@@ -21,22 +46,21 @@ export const GridHeader = styled.div`
     grid-template-rows: 0.2fr 1fr;
 
     .general_clinic_title {
+      width: 685px;
       grid-template-columns: 1/2;
 
       grid-column: 1/2;
       grid-row: 1/3;
       padding: 0;
       margin: 0;
-      vertical-align: baseline;
     }
   }
 `;
 
 export const SectionStyled = styled.section`
-  overflow-x: hidden;
-  overflow-y: hidden; 
+  overflow: hidden;
 
-  background-color: ${({theme}) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.background};
 
   .list_servies {
     display: flex;
