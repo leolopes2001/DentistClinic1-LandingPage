@@ -8,30 +8,30 @@ export const StyledSection = styled.section`
     min-width: 0;
 
     .general_clinic_title {
-      max-width: 260px;
-      min-width: 260px;
+      max-width: 270px;
+      min-width: 270px;
     }
 
-    @media (min-width: 365px) {
+    /* @media (min-width: 365px) {
       .general_clinic_title {
         min-width: 400px;
         max-width: 400px;
       }
-    }
-    @media (min-width: 580px) {
+    } */
+    /* @media (min-width: 580px) {
       .general_clinic_title {
         min-width: 600px;
         max-width: 600px;
       }
-    }
+    } */
 
     @media (min-width: 1000px) {
       display: grid;
       grid-template-columns: 600px 1.2fr;
       grid-template-rows: 1fr;
-      .general_clinic_title {
+      /* .general_clinic_title {
         min-width: 400px;
-      }
+      } */
     }
 
     @media (min-width: 1200px) {
