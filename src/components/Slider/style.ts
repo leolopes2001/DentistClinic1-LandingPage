@@ -138,7 +138,9 @@ const SliderWrapVariant = {
   type3: css`
     position: relative;
     max-width: 600px;
-    .test {
+    left: -2rem;
+   
+    .video_card {
       min-width: 220px;
       height: 400px;
       background-color: black;
@@ -157,22 +159,36 @@ const SliderWrapVariant = {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 16px;
+
+      
+      padding-left: -5rem;
 
       -webkit-transform: scaleX(-1) translateX(-1rem);
       transform: scaleX(-1) translateX(-1rem);
     }
+
+    .swiper-slide{
+      min-width: 220px;
+    }
+   
   `,
 
   type4: css`
     .swiper {
       padding: 36px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .swiper-slide {
       display: flex;
       justify-content: center;
       height: 400px;
+     width: 100%;
 
       & > div {
         min-height: 100%;

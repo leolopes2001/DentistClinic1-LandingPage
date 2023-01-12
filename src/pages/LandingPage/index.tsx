@@ -1,8 +1,6 @@
 import { useEffect } from 'react';
 import Header from './Header';
 import Home from './Home';
-import Section from '../help/Section';
-import { DivTest, DivTest2 } from './style';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import ClinicServices from './ClinicServices';
@@ -11,6 +9,7 @@ import Depositions from './Depositions';
 import Professionals from './Professionals';
 import Footer from './Footer';
 import PatientSay from './PatientSays';
+import Benefits from './Benefits';
 
 const LandingPage = () => {
   useEffect(() => {
@@ -22,9 +21,8 @@ const LandingPage = () => {
       <Header />
       <Home />
       <ClinicServices />
-      <YourTimeHasCome></YourTimeHasCome>
-      
-      <ClinicServices />
+      <YourTimeHasCome />
+      <Benefits />
       <Depositions />
       <Professionals />
       <PatientSay/>

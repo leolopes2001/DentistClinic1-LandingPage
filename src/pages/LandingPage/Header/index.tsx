@@ -1,6 +1,4 @@
 import CompanyLogo from '../../../assets/svg/agendaConsultaLogo.svg';
-
-import CircleIcon from '../../../components/CircleIcon';
 import Link from '../../../components/common/Link';
 
 import MobileMenu from '../../../components/MobileMenu';

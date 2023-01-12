@@ -22,7 +22,7 @@ const LinkVariant = {
     font-weight: 700;
     font-size: ${convertToRem(14)};
     line-height: ${convertToRem(16)};
-    gap: 0.2rem;
+    gap: 0.4rem;
     margin-top: 1rem;
 
     &:hover {
@@ -70,6 +70,12 @@ const LinkVariant = {
       font-size: 16px;
       line-height: 24px;
     }
+  `,
+  benefit: css`
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: ${({ theme }) => theme.colors.primary};
   `,
 };
 

@@ -5,14 +5,32 @@ import Prof3 from '../../../assets/svg/slider/professionals/prof3.svg';
 
 const ProfessionalSlider = () => {
   const settings: SliderProps = {
-    spaceBetween: 80,
     slidesPerView: 1.5,
-    pagination: {clickable: true},
+    pagination: { clickable: true },
     slidesPerGroup: 1,
-    centeredSlides:true,
+    centeredSlides: true,
     initialSlide: 1,
     draggable: true,
     loop: true,
+    breakpoints: {
+      200: {
+        spaceBetween: 50,
+        slidesPerView: 1,
+      },
+      420: {
+        spaceBetween: 50,
+        slidesPerView: 1.5,
+      },
+      590: {
+        slidesPerView: 1.8,
+      },
+      800: {
+        slidesPerView: 2,
+      },
+      1000: {
+        slidesPerView: 3,
+      },
+    },
   };
 
   return (

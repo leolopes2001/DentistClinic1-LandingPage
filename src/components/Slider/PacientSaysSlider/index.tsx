@@ -6,7 +6,7 @@ import CardPatient from './CardPatient';
 const PacientSaysSlider = () => {
   const settings: SliderProps = {
     spaceBetween: 80,
-    
+
     navigation: true,
     pagination: { type: 'progressbar' },
     loop: true,

@@ -13,23 +13,25 @@ const VideoSlider = () => {
     slidesPerGroup: 1,
     initialSlide: 2,
     draggable: true,
+    
     loop: true,
+    
   };
 
   return (
     <Slider variant='type3' settings={settings}>
       <Slide>
-        <div className='test'>
+        <div className='video_card'>
           <img src={ImageSlide2} alt='' />
         </div>
       </Slide>
       <Slide>
-        <div className='test'>
+        <div className='video_card'>
           <img src={ImageSlide3} alt='' />
         </div>
       </Slide>
       <Slide>
-        <div className='test'>
+        <div className='video_card'>
           <img src={ImageSlide1} alt='' />
         </div>
       </Slide>

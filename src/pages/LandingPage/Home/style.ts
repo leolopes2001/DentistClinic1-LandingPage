@@ -3,10 +3,17 @@ import convertToRem from '../../../utils/convertToRem';
 
 export const HomeStyled = styled.main`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
 
   overflow: hidden;
-  background-color: ${({ theme }) => theme.colors.background};
+
+  background-color: #F5FFFD;
+  
+  & > .content{
+    
+    background-color: #F5FFFD;
+  }
 `;
 
 export const AsideDiv = styled.div`
@@ -18,7 +25,7 @@ export const AsideDiv = styled.div`
 
   div:nth-child(1) {
     left: 10%;
-  
+
     bottom: 13%;
     position: absolute;
   }
@@ -39,7 +46,8 @@ export const AsideDiv = styled.div`
 export const Container = styled.div`
   position: relative;
 
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
 
   .icon-one {
     position: absolute;
@@ -62,6 +70,8 @@ export const Container = styled.div`
   .icon-three {
     position: absolute;
     top: 89%;
+    gap: 1rem;
+    justify-content: space-between;
 
     @media (min-width: 1200px) {
       width: 198px;
@@ -72,7 +82,7 @@ export const Container = styled.div`
         font-weight: 500;
         font-size: 18px;
         line-height: 16px;
-        color: #3d3d3d; 
+        color: #3d3d3d;
         width: 100px;
       }
 
@@ -83,7 +93,7 @@ export const Container = styled.div`
         color: #000000;
       }
 
-      
+    
     }
   }
 
@@ -91,6 +101,7 @@ export const Container = styled.div`
   max-height: 92vh;
   transform: translateY(8vh);
 
+  /* overflow: hidden; */
   width: 100%;
   background-color: ${({ theme }) => theme.colors.background};
   position: relative;

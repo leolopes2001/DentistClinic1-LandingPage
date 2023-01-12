@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
   display: none;
   position: relative;
   animation: ${fadeUp} ease-in-out 1000ms;
-
+  overflow-x: visible;
   @media (min-width: 1200px) {
     position: absolute;
     right: -250px;
@@ -42,12 +42,12 @@ export const Wrapper = styled.div`
       position: absolute;
       top: 0;
       top: -10%;
-      right: 33%;
+      right: 35%;
     }
     .svg-two {
       position: absolute;
       top: 68%;
-      right: 35%;
+      right: 28%;
     }
 
     .svg-one,
@@ -64,10 +64,10 @@ export const Wrapper = styled.div`
     }
 
     .svg-one {
-      right: 15%;
+      right: 20%;
     }
     .svg-two {
-      right: 2%;
+      right: 10%;
     }
   }
 `;

@@ -10,15 +10,18 @@ export default createGlobalStyle`
         outline: 0;
     }
 
-    html{
-        height: 100%;
-    }
+   
 
     body, #root{
         position: relative;
-        min-height: 100vh;
-      /* overflow-y: hidden; */
+        /* min-height: 100vh; */
+
+
+         height: -webkit-fill-available;
+     
     }
+
+
     ul{
       list-style: none;
     }
@@ -26,12 +29,15 @@ export default createGlobalStyle`
     .content{
         width: 100%;
         height: 100%;
-        max-width: 1200px;
+        max-width: 1250px;
         margin: 0 auto;
         padding: ${convertToRem(15)};
         position: relative;
        
     }
+
+ 
+
 
     .hide-scroll{
         overflow: hidden !important;

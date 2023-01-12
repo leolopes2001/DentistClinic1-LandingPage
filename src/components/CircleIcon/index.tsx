@@ -52,6 +52,10 @@ const CircleIconVariantDesktop = {
   toothTwo: <ToothTwoDesktop />,
   tooth: <></>,
   toothSpatula: <></>,
+  addPerson: <></>,
+  brushing: <></>,
+  mouth: <></>,
+  verify: <></>
 };
 
 const CircleIconVariantMobile = {
@@ -67,13 +71,17 @@ const CircleIconVariantMobile = {
   toothTwo: <ToothTwoMobile />,
   tooth: <Tooth />,
   toothSpatula: <></>,
+  addPerson: <></>,
+  brushing: <></>,
+  mouth: <></>,
+  verify: <></>
 };
 
 const CircleIconVariantHomeDesktop = {
   randomLogo: <RandomLogoHomeDesktop />,
   toothCare: <ToothCareHomeDesktop />,
   toothSpatula: <ToothSpatulaHomeDesktop />,
-  bag: <></>,
+  bag: <BagDesktop />,
   clock: <></>,
   folks: <></>,
   internet: <></>,
@@ -82,6 +90,10 @@ const CircleIconVariantHomeDesktop = {
   dentistBed: <></>,
   toothTwo: <></>,
   tooth: <></>,
+  addPerson: <></>,
+  brushing: <></>,
+  mouth: <></>,
+  verify: <></>
 };
 
 const CircleIcon = ({

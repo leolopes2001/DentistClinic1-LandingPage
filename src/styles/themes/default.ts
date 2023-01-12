@@ -15,7 +15,8 @@ export default {
     icon: 'FFB200',
     backgroundIcon: 'FFF3D6',
 
-    background: '#F8FCFB',
+    
+    background: '#FDFDFD',
     background2: '#E5E5E5',
 
     whiteFixed: '#fff',

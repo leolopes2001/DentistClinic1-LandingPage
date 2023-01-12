@@ -27,22 +27,20 @@
   ],
   "doctors_cards_slider": [
     {
-      "name": "DC1"
+      "id": 0,
+      "name": "Anya Locefort"
     },
     {
-      "name": "DC2"
+      "id": 1,
+      "name": "Matheus Ribeiro"
     },
     {
-      "name": "DC3"
+      "id": 2,
+      "name": "Luciano Camargo"
     },
     {
-      "name": "DC4"
-    },
-    {
-      "name": "DC5"
-    },
-    {
-      "name": "DC6"
+      "id": 3,
+      "name": "Suzane Lima"
     }
   ],
   "patients_opinion": [
@@ -80,6 +78,32 @@
       "name": "Nikolas Nolan",
       "job": "Gerente comercial",
       "opinion": "Os dentistas são muito simpáticos,a recepção é incrível, não tiver problema nenhum durante o tratamento, agendam rápido."
+    }
+  ],
+  "benefits": [
+    {
+      "id": 0,
+      "title": "Agendamento Online",
+      "text": "Agende sua avaliação sem sair de casa",
+      "btn": "Agendar Agora"
+    },
+    {
+      "id": 1,
+      "title": "Aberto 10hs por dia",
+      "text": "Horário de atendimento de 08:00 às 18:00hs.",
+      "btn": "Como Chegar"
+    },
+    {
+      "id": 2,
+      "title": "Financiamentos",
+      "text": "Parceria com bancos e financeiras",
+      "btn": "Ver tratamentos"
+    },
+    {
+      "id": 3,
+      "title": "Mais Facilidades",
+      "text": "Fácil localização, atendimento rápido e humanizado.",
+      "btn": "Ver Profissionais"
     }
   ]
 }

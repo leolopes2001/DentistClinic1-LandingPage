@@ -11,7 +11,7 @@ const Depositions = () => {
   return (
     <StyledSection>
       <div className='content'>
-        <GridHeader>
+        <GridHeader className='grid'>
           <div>
             <Title tag='h3' variant='title2' main_title={true}>
               Clínica Geral
@@ -29,9 +29,7 @@ const Depositions = () => {
           </Link>
         </GridHeader>
 
-      
-          <VideoSlider></VideoSlider>
-       
+        <VideoSlider />
       </div>
     </StyledSection>
   );

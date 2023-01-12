@@ -1,11 +1,13 @@
 import { Text } from '../../../components/common/Text/style';
 import Title from '../../../components/common/Title';
-import ServicesSlider from '../../../components/Slider/ServicesSlider';
+import BenefitsSlider from '../../../components/Slider/BenefitsSlider';
 import useWindowSize from '../../../hooks/useWindowSize';
-import CardService from './CardService';
+import CardBenefit, { ICardBenefit } from './CardBenefit';
 import { GridHeader, SectionStyled } from './style';
 
-const ClinicService = () => {
+import { benefits } from '../../../components-mock.json';
+
+const Benefits = () => {
   const [width] = useWindowSize();
 
   return (
@@ -14,32 +16,29 @@ const ClinicService = () => {
         <GridHeader>
           <div>
             <Title tag='h3' variant='title2' main_title={true}>
-              Clínica Geral
+              Na clínica Agenda Consulta
             </Title>
           </div>
           <Title tag='h3' variant='title3' className='general_clinic_title'>
-            Veja nossos tratamentos
+            Benefícios e facilidades
           </Title>
           <Text variant='text2' data-aos='fade-left'>
-            Cuidamos da sua saúde bucal e oferecemos todos os tratamentos
-            odontológicos que você precisa.
+            Você pode desfrutar de tratamentos em nossa clínica com vários
+            recursos que vão facilitam cuidar da sua saúde bucal.
           </Text>
         </GridHeader>
 
         {width > 1200 ? (
           <ul className='list_servies'>
-            <CardService></CardService>
-            <CardService></CardService>
-            <CardService></CardService>
-            <CardService></CardService>
-            <CardService></CardService>
-            <CardService></CardService>
+            {benefits.map((el) => (
+              <CardBenefit key={el.id} {...(el as ICardBenefit)} />
+            ))}
           </ul>
         ) : (
-          <ServicesSlider />
+          <BenefitsSlider />
         )}
       </div>
     </SectionStyled>
   );
 };
-export default ClinicService;
+export default Benefits;

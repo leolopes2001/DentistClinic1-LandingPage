@@ -30,6 +30,7 @@ export const TextVariant = {
   text2: css`
     width: 100%;
     max-width: 297px;
+
     font-weight: 400;
     font-size: 12px;
     height: auto;

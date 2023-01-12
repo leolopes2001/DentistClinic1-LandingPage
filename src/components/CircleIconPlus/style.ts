@@ -82,6 +82,47 @@ const ContainerVariantMobile = {
       color: #000000;
     }
   `,
+  three: css`
+    position: absolute;
+    width: 79.21px;
+    height: 72.83px;
+    background: #ffffff;
+    border-radius: 10.3439px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .content_box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 0.4rem;
+    }
+
+    .text {
+      font-family: 'Red Hat Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 7.75791px;
+      line-height: 10px;
+      text-align: center;
+      color: #49545a;
+      width: 50px;
+    }
+
+    .label {
+      font-family: 'Red Hat Display';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 7.75791px;
+      line-height: 10px;
+      text-align: center;
+      color: #373f43;
+    }
+  `,
 };
 
 const ContainerVariantDesktop = {
@@ -90,8 +131,6 @@ const ContainerVariantDesktop = {
     width: 76.21px;
     height: 69.83px;
 
-    /* left: 113.66px;
-    top: 358.66px; */
     .content_box {
       display: flex;
       flex-direction: column;
@@ -138,6 +177,47 @@ const ContainerVariantDesktop = {
       font-size: 18.1018px;
       line-height: 22px;
       color: #000000;
+    }
+  `,
+  three: css`
+    position: absolute;
+    width: 79.21px;
+    height: 72.83px;
+    background: #ffffff;
+    border-radius: 10.3439px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .content_box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 0.4rem;
+    }
+
+    .text {
+      font-family: 'Red Hat Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 7.75791px;
+      line-height: 10px;
+      text-align: center;
+      color: #49545a;
+      width: 50px;
+    }
+
+    .label {
+      font-family: 'Red Hat Display';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 7.75791px;
+      line-height: 10px;
+      text-align: center;
+      color: #373f43;
     }
   `,
 };

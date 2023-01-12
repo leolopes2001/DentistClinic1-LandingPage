@@ -54,7 +54,7 @@ const Home = () => {
         <CircleIconPlus
           variant='two'
           icon='randomLogo'
-          size='home_desktop'
+          size={width > 1200 ? 'desktop' : "mobile"}
           text1='Clinica'
           label='N°1'
           text2='da cidade'

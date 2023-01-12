@@ -1,14 +1,24 @@
 import { GridHeader, StyledSection } from './style';
-import DoctorMobile from '../../../assets/svg/common/doctor.svg';
 import Title from '../../../components/common/Title';
 import { Text } from '../../../components/common/Text/style';
-import Button from '../../../components/common/Button';
-import Link from '../../../components/common/Link';
-import CircleIcon from '../../../components/CircleIcon';
-import VideoSlider from '../../../components/Slider/VideoSlider';
+import Prof1 from '../../../assets/svg/slider/professionals/prof1.svg';
+import Prof2 from '../../../assets/svg/slider/professionals/prof2.svg';
+import Prof3 from '../../../assets/svg/slider/professionals/prof3.svg';
+import Prof4 from '../../../assets/svg/slider/professionals/prof4.svg';
 import ProfessionalSlider from '../../../components/Slider/ProfessionalsSlider';
+import useWindowSize from '../../../hooks/useWindowSize';
+import { doctors_cards_slider } from '../../../components-mock.json';
+
+const DoctorsImages = {
+  0: Prof1,
+  1: Prof2,
+  2: Prof3,
+  3: Prof4,
+};
 
 const Professionals = () => {
+  const [width] = useWindowSize();
+
   return (
     <StyledSection>
       <div className='content'>
@@ -22,14 +32,25 @@ const Professionals = () => {
             Vejas os seus dentistas
           </Title>
           <Text variant='text2' data-aos='fade-left'>
-            Time formado por especialistas e profissionais experientesa.
+            Time formado por especialistas e profissionais experientes
           </Text>
-          <Link href='' variant='primary'>
-            Eu Quero
-          </Link>
         </GridHeader>
 
-        <ProfessionalSlider></ProfessionalSlider>
+        {width > 1200 ? (
+          <ul className='doctors_list'>
+            {doctors_cards_slider.map((doctor) => (
+              <li key={doctor.id}>
+                <img
+                  src={DoctorsImages[doctor.id as 0 | 1 | 2 | 3]}
+                  alt='Doctor image'
+                />
+                <p>{doctor.name}</p>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <ProfessionalSlider />
+        )}
       </div>
     </StyledSection>
   );

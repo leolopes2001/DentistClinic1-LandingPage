@@ -4,24 +4,13 @@ import convertToRem from '../../../utils/convertToRem';
 export const StyledSection = styled.section`
   overflow-x: hidden;
   overflow-y: hidden;
-  .test {
-    width: 100%;
-  }
+  background-color: ${({theme}) => theme.colors.background};
   & > .content {
-    display: grid;
-   
-    /* flex-direction: column;
-    align-items: center;
-
     @media (min-width: 1000px) {
-      flex-direction: row;
-      justify-content: space-between;
+      display: flex;
 
-      div:nth-child(2) {
-        max-width: 229.69px;
-        min-width: 229.69px;
-      }
-    } */
+      flex-direction: row-reverse;
+    }
   }
 `;
 

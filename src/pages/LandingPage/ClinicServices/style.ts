@@ -32,7 +32,9 @@ export const GridHeader = styled.div`
 
 export const SectionStyled = styled.section`
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: hidden; 
+
+  background-color: ${({theme}) => theme.colors.background};
 
   .list_servies {
     display: flex;

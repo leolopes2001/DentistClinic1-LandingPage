@@ -11,8 +11,12 @@ export type CircleIconType =
   | 'dentistBed'
   | 'tooth'
   | 'randomLogo'
-  | 'toothSpatula';
-
+  | 'toothSpatula'
+  | 'addPerson'
+  | 'brushing'
+  | 'mouth'
+  | 'verify';
+  
 export interface IGetProps {
   size: SizeType;
   'data-aos'?: string;

@@ -8,7 +8,7 @@ export const Wrapper = styled.div<{ size: SizeType }>`
 
   width: 50px;
   height: 50px;
-
+ 
   svg {
     path {
       fill: ${({ theme }) => theme.colors.primary};
