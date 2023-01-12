@@ -6,7 +6,7 @@ export const HeaderStyled = styled.header`
   align-items: center;
   justify-content: space-between;
   top: 0;
-  padding: 0 1rem;
+  padding: 0 0.2rem;
   position: fixed;
   height: 8vh;
   background-color: ${({ theme }) => theme.colors.whiteFixed};
@@ -15,10 +15,12 @@ export const HeaderStyled = styled.header`
 
   @media (min-width: 1000px) {
     background-color: ${({ theme }) => theme.colors.background};
+    padding: 0 1rem;
   }
 
   @media (min-width: 1200px) {
     background-color: #f5fffd;
+
   }
 `;
 
