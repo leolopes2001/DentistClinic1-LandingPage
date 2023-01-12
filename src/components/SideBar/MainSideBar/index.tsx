@@ -1,14 +1,47 @@
-
+import { useSideBar } from '../../../contexts/SideBarProvider';
+import Link from '../../common/Link';
 
 const MainSideBar = () => {
-  
+  const { isSideBarOpen } = useSideBar();
+
   return (
     <>
       <nav>
-        <a href=''>Home1</a>
-        <a href=''>Home2</a>
-        <a href=''>Home3</a>
-        <a href=''>Home4</a>
+        <Link
+          variant='navLink'
+          href=''
+          className={isSideBarOpen ? 'animation' : ''}
+        >
+          Home
+        </Link>
+        <Link
+          variant='navLink'
+          href=''
+          className={isSideBarOpen ? 'animation' : ''}
+        >
+          Tratamentos
+        </Link>
+        <Link
+          variant='navLink'
+          href=''
+          className={isSideBarOpen ? 'animation' : ''}
+        >
+          Dentista
+        </Link>
+        <Link
+          variant='navLink'
+          href=''
+          className={isSideBarOpen ? 'animation' : ''}
+        >
+          Agendamentos
+        </Link>
+        <Link
+          variant='navLink'
+          href=''
+          className={isSideBarOpen ? 'animation' : ''}
+        >
+          Como chegar
+        </Link>
       </nav>
     </>
   );
