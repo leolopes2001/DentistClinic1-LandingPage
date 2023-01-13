@@ -11,6 +11,7 @@ import { ReactComponent as DentistBedDesktop } from '../../assets/svg/desktop/de
 import { ReactComponent as ToothCareRemovedDesktop } from '../../assets/svg/desktop/toothCareRemoved.svg';
 import { ReactComponent as RandomLogoDesktop } from '../../assets/svg/desktop/randomLogo.svg';
 import { ReactComponent as ToothTwoDesktop } from '../../assets/svg/desktop/toothTwo.svg';
+import { ReactComponent as ToothSpatulaDesktop } from '../../assets/svg/desktop/toothSpatula.svg';
 
 // ----------------
 // Mobile Imgs-------------------
@@ -26,7 +27,7 @@ import { ReactComponent as ToothCareRemovedMobile } from '../../assets/svg/mobil
 import { ReactComponent as RandomLogoMobile } from '../../assets/svg/mobile/randomLogo.svg';
 import { ReactComponent as ToothTwoMobile } from '../../assets/svg/mobile/toothTwo.svg';
 import { ReactComponent as Tooth } from '../../assets/svg/mobile/tooth.svg';
-
+import { ReactComponent as ToothSpatulaMobile } from '../../assets/svg/mobile/toothSpatula.svg';
 // Home Desktop--------------------------
 import { ReactComponent as ToothSpatulaHomeDesktop } from '../../assets/svg/home_desktop/toothSpatula.svg';
 import { ReactComponent as ToothCareHomeDesktop } from '../../assets/svg/home_desktop/toothCare.svg';
@@ -51,11 +52,11 @@ const CircleIconVariantDesktop = {
   randomLogo: <RandomLogoDesktop />,
   toothTwo: <ToothTwoDesktop />,
   tooth: <></>,
-  toothSpatula: <></>,
+  toothSpatula: <ToothSpatulaDesktop />,
   addPerson: <></>,
   brushing: <></>,
   mouth: <></>,
-  verify: <></>
+  verify: <></>,
 };
 
 const CircleIconVariantMobile = {
@@ -70,11 +71,11 @@ const CircleIconVariantMobile = {
   randomLogo: <RandomLogoMobile />,
   toothTwo: <ToothTwoMobile />,
   tooth: <Tooth />,
-  toothSpatula: <></>,
+  toothSpatula: <ToothSpatulaMobile />,
   addPerson: <></>,
   brushing: <></>,
   mouth: <></>,
-  verify: <></>
+  verify: <></>,
 };
 
 const CircleIconVariantHomeDesktop = {
@@ -93,7 +94,7 @@ const CircleIconVariantHomeDesktop = {
   addPerson: <></>,
   brushing: <></>,
   mouth: <></>,
-  verify: <></>
+  verify: <></>,
 };
 
 const CircleIcon = ({

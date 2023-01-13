@@ -1,8 +1,7 @@
 import { Slide, Slider, SliderProps } from '..';
 import { patients_opinion } from '../../../components-mock.json';
-import CardService from '../../../pages/LandingPage/ClinicServices/CardService';
-import Patient1 from '../../../assets/svg/patients/patient1.svg';
 import CardPatient from './CardPatient';
+
 const PacientSaysSlider = () => {
   const settings: SliderProps = {
     spaceBetween: 80,

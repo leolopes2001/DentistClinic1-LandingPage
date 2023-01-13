@@ -4,12 +4,20 @@ import ServicesSlider from '../../../components/Slider/ServicesSlider';
 import useWindowSize from '../../../hooks/useWindowSize';
 import CardService from './CardService';
 import { GridHeader, SectionStyled } from './style';
+import { services } from '../../../components-mock.json';
+import { RefObject } from 'react';
 
-const ClinicService = () => {
+const ClinicService = ({
+  innerRef,
+  id,
+}: {
+  id: string;
+  innerRef: RefObject<HTMLElement>;
+}) => {
   const [width] = useWindowSize();
 
   return (
-    <SectionStyled id="services">
+    <SectionStyled ref={innerRef} id={id}>
       <div className='content'>
         <GridHeader>
           <div>
@@ -28,12 +36,9 @@ const ClinicService = () => {
 
         {width > 1200 ? (
           <ul className='list_servies'>
-            <CardService></CardService>
-            <CardService></CardService>
-            <CardService></CardService>
-            <CardService></CardService>
-            <CardService></CardService>
-            <CardService></CardService>
+            {services.map((el) => (
+              <CardService key={el.service} {...el} />
+            ))}
           </ul>
         ) : (
           <ServicesSlider />

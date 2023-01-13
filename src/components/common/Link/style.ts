@@ -5,6 +5,7 @@ import { ILinkProps } from './Link';
 const LinkVariant = {
   primary: css`
     width: 100%;
+    transition: all 600ms !important;
     max-width: ${convertToRem(180)};
     height: ${convertToRem(48)};
     margin-right: 7rem;
@@ -33,21 +34,16 @@ const LinkVariant = {
       font-size: 1.4rem;
     }
     border-radius: ${convertToRem(4)};
-  `,
+    `,
   navLink: css`
     font-weight: 400;
     font-size: ${convertToRem(20)};
     line-height: ${convertToRem(23)};
     color: ${({ theme }) => theme.colors.grey6};
-
-    .active {
-      font-weight: 800;
-      font-size: ${convertToRem(20)};
-      line-height: ${convertToRem(23)};
-      color: ${({ theme }) => theme.colors.grey5};
-    }
+   
   `,
   clinicService: css`
+  transition: all 600ms !important;
     padding: 8px 16px;
     width: 112px;
     height: 29px;
@@ -63,15 +59,16 @@ const LinkVariant = {
       color: ${({ theme }) => theme.colors.whiteFixed};
       background-color: ${({ theme }) => theme.colors.primary};
     }
-
+    
     @media (min-width: 1200px) {
       width: 182px;
       height: 48px;
       font-size: 16px;
       line-height: 24px;
     }
-  `,
+    `,
   benefit: css`
+    transition: all 600ms !important;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
@@ -90,9 +87,7 @@ export const LinkStyled = styled.a<ILinkProps>`
   align-items: center;
   font-family: 'Raleway';
   font-style: normal;
-  transition: all 600ms !important;
   cursor: pointer;
   text-decoration: none;
-
   ${({ variant }) => LinkVariant[variant]}
 `;

@@ -2,10 +2,12 @@ import Link from '../../../components/common/Link';
 import Title from '../../../components/common/Title';
 import { FooterStyled, Logo } from './style';
 import CompanyLogo from '../../../assets/svg/agendaConsultaLogo.svg';
+import { RefObject } from 'react';
+import { IPages } from '..';
 
-const Footer = () => {
+const Footer = ({ innerRef, id }: IPages) => {
   return (
-    <FooterStyled id='footer'>
+    <FooterStyled ref={innerRef} id={id}>
       <div className='content'>
         <section className='services'>
           <h3>Serviços</h3>

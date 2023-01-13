@@ -87,54 +87,6 @@ const SliderWrapVariant = {
       }
     }
   `,
-  type2: css`
-    position: relative;
-
-    .swiper {
-      /* width: 90%;
-      margin-top: 30px;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      align-items: center;
-      padding: 2rem; */
-    }
-
-    .swiper {
-      padding: 32px;
-    }
-
-    .swiper-slide {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      border-radius: 8px;
-      padding: 1rem;
-    }
-
-    .swiper-button-prev {
-      color: grey;
-
-      &:hover {
-        color: ${({ theme }) => theme.colors.primary};
-      }
-    }
-
-    .swiper-button-next {
-      color: grey;
-      &:hover {
-        color: ${({ theme }) => theme.colors.primary};
-      }
-    }
-
-    .swiper-pagination-bullet-active {
-      background-color: #718096;
-    }
-
-    /* ------------------- */
-  `,
-
   type3: css`
     position: relative;
     max-width: 600px;
@@ -396,7 +348,7 @@ const SliderWrapVariant = {
 };
 
 export const SliderWrap = styled.div<{
-  variant: 'type1' | 'type2' | 'type3' | 'type4' | 'type5';
+  variant: 'type1' | 'type3' | 'type4' | 'type5';
 }>`
   min-width: 0;
 

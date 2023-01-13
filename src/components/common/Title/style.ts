@@ -151,5 +151,7 @@ export const BaseTitle = styled(MaskTitle)`
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Raleway';
+  font-style: normal;
   ${({ variant }) => TitleVariant[variant]}
 `;

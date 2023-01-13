@@ -8,6 +8,7 @@ import Prof4 from '../../../assets/svg/slider/professionals/prof4.svg';
 import ProfessionalSlider from '../../../components/Slider/ProfessionalsSlider';
 import useWindowSize from '../../../hooks/useWindowSize';
 import { doctors_cards_slider } from '../../../components-mock.json';
+import { IPages } from '..';
 
 const DoctorsImages = {
   0: Prof1,
@@ -16,11 +17,11 @@ const DoctorsImages = {
   3: Prof4,
 };
 
-const Professionals = () => {
+const Professionals = ({ innerRef, id }: IPages) => {
   const [width] = useWindowSize();
 
   return (
-    <StyledSection id='dentists'>
+    <StyledSection ref={innerRef} id={id}>
       <div className='content'>
         <GridHeader>
           <div>

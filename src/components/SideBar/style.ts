@@ -37,6 +37,13 @@ export const SideBarStyled = styled.aside<{
     .animation {
       animation: ${fade} 800ms;
     }
+
+    .active {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 23px;
+      color: #49545a;
+    }
   }
   ${({ isSideBarOpen }) =>
     isSideBarOpen &&

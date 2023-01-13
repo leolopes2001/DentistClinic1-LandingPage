@@ -1,54 +1,39 @@
 import { useSideBar } from '../../../contexts/SideBarProvider';
 import Link from '../../common/Link';
+import { navLiksData } from '../../../components-mock.json';
 
 const MainSideBar = () => {
-  const { isSideBarOpen, setIsSideBarOpen } = useSideBar();
+  const { isSideBarOpen, setIsSideBarOpen, sectionActiveSideBar } =
+    useSideBar();
 
   const handleClick = () => setIsSideBarOpen(false);
+
+  const getClass = (id: string): string => {
+    let class_name = '';
+
+    if (isSideBarOpen) class_name += 'animation';
+
+    if (id === sectionActiveSideBar) {
+      class_name += ' active';
+    }
+
+    return class_name;
+  };
 
   return (
     <>
       <nav>
-        <Link
-          variant='navLink'
-          href='#home'
-          className={isSideBarOpen ? 'animation' : ''}
-          onClick={handleClick}
-        >
-          Home
-        </Link>
-        <Link
-          variant='navLink'
-          href='#services'
-          className={isSideBarOpen ? 'animation' : ''}
-          onClick={handleClick}
-        >
-          Tratamentos
-        </Link>
-        <Link
-          variant='navLink'
-          href='#dentists'
-          className={isSideBarOpen ? 'animation' : ''}
-          onClick={handleClick}
-        >
-          Dentista
-        </Link>
-        <Link
-          variant='navLink'
-          href='#schedules'
-          className={isSideBarOpen ? 'animation' : ''}
-          onClick={handleClick}
-        >
-          Agendamentos
-        </Link>
-        <Link
-          variant='navLink'
-          href='#footer'
-          className={isSideBarOpen ? 'animation' : ''}
-          onClick={handleClick}
-        >
-          Como chegar
-        </Link>
+        {navLiksData.map(({ id, name }) => (
+          <Link
+            key={id}
+            variant='navLink'
+            href={`#${id}`}
+            className={getClass(id)}
+            onClick={handleClick}
+          >
+            {name}
+          </Link>
+        ))}
       </nav>
     </>
   );

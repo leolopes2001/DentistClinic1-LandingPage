@@ -1,28 +1,34 @@
 {
-  "pacients_cards_slider": [
+  "services": [
     {
-      "name": "leo"
+      "img": "toothTwo",
+      "service": "Clareamento Dental",
+      "description": "Tenha os dentes mais brancos em apenas uma sessão."
     },
     {
-      "name": "fra"
+      "img": "toothSpatula",
+      "service": "Implante dentário",
+      "description": "Implante seus dentes perdidos e recupere o sorriso."
     },
     {
-      "name": "lu"
+      "img": "toothCare",
+      "service": "Prótese Dentária",
+      "description": "Conheça a prótese dental mais moderna que naturaliza o seu rosto!"
     },
     {
-      "name": "Cesar"
+      "img": "toothbrush",
+      "service": "Harmonização Orofacial",
+      "description": "Harmonização Orofacial é um procedimento estético que tem como objetivo melhorar a aparência do rosto."
     },
     {
-      "name": "Luiza"
+      "img": "toothCareRemoved",
+      "service": "Alinhador Transparente",
+      "description": "Nosso alinhador é totalmente invisível, confortável e fácil de usar, permitindo que você tenha o sorriso perfeito que sempre sonhou!"
     },
     {
-      "name": "Joa"
-    },
-    {
-      "name": "Amanda"
-    },
-    {
-      "name": "Thiago"
+      "img": "dentistBed",
+      "service": "Aparelho Dental",
+      "description": "Correção da mordida,. estética dental, Tratamento ortodôntico para todas as idades!"
     }
   ],
   "doctors_cards_slider": [
@@ -47,37 +53,23 @@
     {
       "id": 0,
       "stars": 5,
-      "name": "Leo",
-      "job": "Programador",
-      "opinion": "Marcar uma consulta é muito fácil porque pode ser feito online então pode economizar muita coisa e ser feito com mais clareza."
-    },
-    {
-      "id": 1,
-      "stars": 5,
       "name": "William Smith",
       "job": "Fotográfo",
       "opinion": "O local da clínica é muito confortável e os serviços prestados são ótimo e excelente estrutura para nós pacientes."
     },
     {
+      "id": 1,
+      "stars": 5,
+      "name": "Nikolas Nolan",
+      "job": "Gerente comercial",
+      "opinion": "Os dentistas são muito simpáticos,a recepção é incrível, não tiver problema nenhum durante o tratamento, agendam rápido."
+    },
+    {
       "id": 2,
       "stars": 5,
-      "name": "Nikolas Nolan",
-      "job": "Gerente comercial",
-      "opinion": "Os dentistas são muito simpáticos,a recepção é incrível, não tiver problema nenhum durante o tratamento, agendam rápido."
-    },
-    {
-      "id": 3,
-      "stars": 5,
-      "name": "Nikolas Nolan",
-      "job": "Gerente comercial",
-      "opinion": "Os dentistas são muito simpáticos,a recepção é incrível, não tiver problema nenhum durante o tratamento, agendam rápido."
-    },
-    {
-      "id": 4,
-      "stars": 5,
-      "name": "Nikolas Nolan",
-      "job": "Gerente comercial",
-      "opinion": "Os dentistas são muito simpáticos,a recepção é incrível, não tiver problema nenhum durante o tratamento, agendam rápido."
+      "name": "Lucia Dias",
+      "job": "Enfermeira",
+      "opinion": "Marcar uma consulta é muito fácil porque pode ser feito online então pode economizar muita coisa e ser feito com mais clareza."
     }
   ],
   "benefits": [
@@ -104,6 +96,28 @@
       "title": "Mais Facilidades",
       "text": "Fácil localização, atendimento rápido e humanizado.",
       "btn": "Ver Profissionais"
+    }
+  ],
+  "navLiksData": [
+    {
+      "id": "home",
+      "name": "Home"
+    },
+    {
+      "id": "services",
+      "name": "Tratamentos"
+    },
+    {
+      "id": "schedules",
+      "name": "Agendamentos"
+    },
+    {
+      "id": "dentists",
+      "name": "Dentistas"
+    },
+    {
+      "id": "footer",
+      "name": "Como chegar"
     }
   ]
 }

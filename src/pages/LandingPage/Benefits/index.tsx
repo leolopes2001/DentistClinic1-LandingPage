@@ -1,6 +1,5 @@
 import { Text } from '../../../components/common/Text/style';
 import Title from '../../../components/common/Title';
-import BenefitsSlider from '../../../components/Slider/BenefitsSlider';
 import useWindowSize from '../../../hooks/useWindowSize';
 import CardBenefit, { ICardBenefit } from './CardBenefit';
 import { GridHeader, SectionStyled } from './style';

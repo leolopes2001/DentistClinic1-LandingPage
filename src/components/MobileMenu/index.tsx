@@ -6,8 +6,6 @@ const MobileMenu = () => {
   const { isSideBarOpen, setIsSideBarOpen } = useSideBar();
 
   const handleMenuClick = useCallback(() => {
-    console.log("clicou ");
-    
     setIsSideBarOpen((prev) => !prev);
   }, []);
 

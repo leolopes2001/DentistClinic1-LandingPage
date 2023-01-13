@@ -39,7 +39,7 @@ export const GridHeader = styled.div`
   @media (min-width: 1200px) {
     padding: 0rem;
     margin-top: ${convertToRem(43)};
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 50px 80px;
     margin-bottom: 5rem;
     .general_clinic_title {
@@ -51,8 +51,8 @@ export const GridHeader = styled.div`
       vertical-align: baseline;
 
       width: 685px;
-      max-width: 800px;
-    }
+      max-width: 600px;
+      }
     
     p {
       min-width: 450px;

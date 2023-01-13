@@ -5,25 +5,30 @@ import Title from '../../../../components/common/Title';
 import { LiStyled } from './style';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import useWindowSize from '../../../../hooks/useWindowSize';
-const CardService = () => {
+
+interface ICardService {
+  img: any;
+  service: string;
+  description: string;
+}
+
+const CardService = ({ img, description, service }: ICardService) => {
   const [width] = useWindowSize();
 
   return (
     <LiStyled data-aos='fade-up'>
       <div>
         <CircleIcon
-          icon='toothCare'
+          icon={img}
           size={width < 1200 ? 'mobile' : 'desktop'}
           animation={false}
         />
         <Title variant='title4' tag='h4'>
-        Implante dentário
+          {service}
         </Title>
       </div>
 
-      <Text variant='text3'>
-        Conheça a prótese dental mais moderna que naturaliza o seu rosto!
-      </Text>
+      <Text variant='text3'>{description}</Text>
       <Link variant='clinicService' href=''>
         Agendar <MdOutlineArrowForwardIos />
       </Link>

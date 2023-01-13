@@ -10,12 +10,13 @@ import useWindowSize from '../../../hooks/useWindowSize';
 import CircleIconPlus from '../../../components/CircleIconPlus';
 import VerifyDesktop from '../../../assets/svg//desktop/verify.svg';
 import VerifyMobile from '../../../assets/svg/mobile/verify.svg';
+import { IPages } from '..';
 
-const YourTimeHasCome = () => {
+const YourTimeHasCome = ({ innerRef, id }: IPages) => {
   const [width] = useWindowSize();
 
   return (
-    <StyledSection id='schedules'>
+    <StyledSection ref={innerRef} id={id}>
       <div className='content'>
         <div className='container_img'>
           <div className='box_img' data-aos='fade-up'>

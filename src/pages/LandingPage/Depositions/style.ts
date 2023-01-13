@@ -46,9 +46,5 @@ export const GridHeader = styled.div`
     p {
       max-width: 600px;
     }
-
-    .general_clinic_title {
-      margin-left: 2rem;
-    }
   }
 `;

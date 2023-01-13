@@ -20,7 +20,6 @@ export const HeaderStyled = styled.header`
 
   @media (min-width: 1200px) {
     background-color: #f5fffd;
-
   }
 `;
 
@@ -46,6 +45,14 @@ export const NavStyled = styled.nav`
     display: flex;
     align-items: center;
     gap: 1rem;
+  }
+
+  .active {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    color: #49545a;
+
   }
 
   @media (min-width: 1200px) {
