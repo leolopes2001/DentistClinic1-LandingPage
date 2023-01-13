@@ -12,6 +12,10 @@ import { ReactComponent as ToothCareRemovedDesktop } from '../../assets/svg/desk
 import { ReactComponent as RandomLogoDesktop } from '../../assets/svg/desktop/randomLogo.svg';
 import { ReactComponent as ToothTwoDesktop } from '../../assets/svg/desktop/toothTwo.svg';
 import { ReactComponent as ToothSpatulaDesktop } from '../../assets/svg/desktop/toothSpatula.svg';
+import { ReactComponent as AddPersonDesktop } from '../../assets/svg/desktop/addPerson.svg';
+import { ReactComponent as BrushingDesktop } from '../../assets/svg/desktop/brushing.svg';
+import { ReactComponent as MouthDesktop } from '../../assets/svg/desktop/mouth.svg';
+import { ReactComponent as VerifyDesktop } from '../../assets/svg/desktop/verify.svg';
 
 // ----------------
 // Mobile Imgs-------------------
@@ -28,10 +32,18 @@ import { ReactComponent as RandomLogoMobile } from '../../assets/svg/mobile/rand
 import { ReactComponent as ToothTwoMobile } from '../../assets/svg/mobile/toothTwo.svg';
 import { ReactComponent as Tooth } from '../../assets/svg/mobile/tooth.svg';
 import { ReactComponent as ToothSpatulaMobile } from '../../assets/svg/mobile/toothSpatula.svg';
+import { ReactComponent as AddPersonMobile } from '../../assets/svg/mobile/addPerson.svg';
+import { ReactComponent as BrushingMobile } from '../../assets/svg/mobile/brushing.svg';
+import { ReactComponent as MouthMobile } from '../../assets/svg/mobile/mouth.svg';
+import { ReactComponent as VerifyMobile } from '../../assets/svg/mobile/verify.svg';
+
 // Home Desktop--------------------------
 import { ReactComponent as ToothSpatulaHomeDesktop } from '../../assets/svg/home_desktop/toothSpatula.svg';
 import { ReactComponent as ToothCareHomeDesktop } from '../../assets/svg/home_desktop/toothCare.svg';
 import { ReactComponent as RandomLogoHomeDesktop } from '../../assets/svg/home_desktop/randomLogo.svg';
+import { ReactComponent as AddPersonHomeDesktop } from '../../assets/svg/home_desktop/addPerson.svg';
+import { ReactComponent as MouthHomeDesktop } from '../../assets/svg/home_desktop/mouth.svg';
+import { ReactComponent as BrushingHomeDesktop } from '../../assets/svg/home_desktop/brushing.svg';
 
 interface ICircleIconProps {
   icon: CircleIconType;
@@ -53,10 +65,10 @@ const CircleIconVariantDesktop = {
   toothTwo: <ToothTwoDesktop />,
   tooth: <></>,
   toothSpatula: <ToothSpatulaDesktop />,
-  addPerson: <></>,
-  brushing: <></>,
-  mouth: <></>,
-  verify: <></>,
+  addPerson: <AddPersonDesktop />,
+  brushing: <BrushingDesktop />,
+  mouth: <MouthDesktop />,
+  verify: <VerifyDesktop />,
 };
 
 const CircleIconVariantMobile = {
@@ -72,10 +84,10 @@ const CircleIconVariantMobile = {
   toothTwo: <ToothTwoMobile />,
   tooth: <Tooth />,
   toothSpatula: <ToothSpatulaMobile />,
-  addPerson: <></>,
-  brushing: <></>,
-  mouth: <></>,
-  verify: <></>,
+  addPerson: <AddPersonMobile />,
+  brushing: <BrushingMobile />,
+  mouth: <MouthMobile />,
+  verify: <VerifyMobile />,
 };
 
 const CircleIconVariantHomeDesktop = {
@@ -91,9 +103,9 @@ const CircleIconVariantHomeDesktop = {
   dentistBed: <></>,
   toothTwo: <></>,
   tooth: <></>,
-  addPerson: <></>,
-  brushing: <></>,
-  mouth: <></>,
+  addPerson: <AddPersonHomeDesktop />,
+  brushing: <BrushingHomeDesktop/>,
+  mouth: <MouthHomeDesktop/>,
   verify: <></>,
 };
 

@@ -2,9 +2,10 @@ import { GridHeader, StyledSection } from './style';
 import Title from '../../../components/common/Title';
 import { Text } from '../../../components/common/Text/style';
 import PacientSaysSlider from '../../../components/Slider/PacientSaysSlider';
+import { IPages } from '..';
 
-const PatientSay = () => (
-    <StyledSection>
+const PatientSay = ({innerRef}:IPages) => (
+    <StyledSection ref={innerRef}>
       <div className='content'>
         <GridHeader>
           <div>

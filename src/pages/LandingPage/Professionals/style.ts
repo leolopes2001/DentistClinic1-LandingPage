@@ -25,21 +25,8 @@ export const StyledSection = styled.section`
         }
 
         p {
-          font-family: 'Manrope';
-          font-style: normal;
-          font-weight: 700;
-          font-size: ${convertToRem(24)};
-          line-height: ${convertToRem(32)};
-          letter-spacing: ${convertToRem(0.374)};
-          color: ${({ theme }) => theme.colors.whiteFixed};
           transition: all 400ms;
           opacity: 0;
-          top: 80%;
-          left: 50%;
-          transform: translate(-50%, -10%);
-          width: 100%;
-          text-align: center;
-          position: absolute;
         }
       }
 

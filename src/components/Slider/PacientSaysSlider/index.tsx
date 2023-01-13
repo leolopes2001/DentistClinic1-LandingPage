@@ -13,7 +13,7 @@ const PacientSaysSlider = () => {
     slidesPerGroup: 1,
     breakpoints: {
       900: {
-        slidesPerView: 2.3,
+        slidesPerView: 1.8,
       },
       1150: {
         slidesPerView: 2.3,
@@ -28,7 +28,7 @@ const PacientSaysSlider = () => {
     <Slider variant='type5' settings={settings}>
       {patients_opinion.map((user) => (
         <Slide key={user.id}>
-          <CardPatient {...user}></CardPatient>
+          <CardPatient {...user}/>
         </Slide>
       ))}
     </Slider>

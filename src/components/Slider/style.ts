@@ -113,8 +113,6 @@ const SliderWrapVariant = {
       justify-content: end;
 
       padding-left: 5rem;
-
-    
     }
 
     .swiper-slide {
@@ -122,42 +120,6 @@ const SliderWrapVariant = {
       max-width: 250px;
       margin-right: 3rem;
     }
-
-    /* ********************** */
-    /* position: relative;
-    max-width: 600px;
-    left: -2rem;
-
-    .video_card {
-      min-width: 220px;
-      height: 400px;
-      background-color: black;
-      border-radius: 2rem;
-
-      img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        border-radius: 2rem;
-      }
-    }
-
-    .swiper {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      padding-left: -5rem;
-
-       -webkit-transform: scaleX(-1) translateX(-1rem);
-      transform: scaleX(-1) translateX(-1rem); 
-    }
-
-    .swiper-slide {
-      min-width: 220px;
-    }
-    */
   `,
 
   type4: css`
@@ -273,9 +235,7 @@ const SliderWrapVariant = {
           h6,
           label {
             text-align: left;
-          }
-          label {
-            font-style: italic;
+            justify-content: flex-start;
           }
         }
 
@@ -288,13 +248,15 @@ const SliderWrapVariant = {
             height: 15px;
           }
         }
-
+        .opinion {
+          font-style: italic;
+        }
         @media (min-width: 900px) {
           min-width: 467px;
           max-width: 467px;
           height: 321px;
 
-          p {
+          .opinion {
             max-width: 100%;
             margin: 0;
             padding: 0;

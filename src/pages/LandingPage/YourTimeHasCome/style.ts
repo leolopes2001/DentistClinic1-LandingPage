@@ -95,15 +95,19 @@ export const StyledSection = styled.section`
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-evenly;
+        justify-content: center;
 
         h6 {
+          font-family: 'Inter';
+          font-style: normal;
           font-weight: 700;
           font-size: ${convertToRem(16)};
           line-height: ${convertToRem(19)};
           color: ${({ theme }) => theme.colors.blackFixed};
         }
         p {
+          font-family: 'Inter';
+          font-style: normal;
           font-weight: 500;
           font-size: ${convertToRem(12)};
           line-height: ${convertToRem(15)};
@@ -211,7 +215,6 @@ export const GridHeader = styled.div`
 
   @media (max-width: 1000px) {
     margin-top: ${convertToRem(43)};
-   
   }
 
   @media (min-width: 1200px) {

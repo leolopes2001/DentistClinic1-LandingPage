@@ -11,12 +11,6 @@ export default {
     grey5: '#49545A',
     grey6: '#606F76',
 
-    // icon: 'FFB200',
-    icon: 'blue',
-    // backgroundIcon: 'FFF3D6',
-    backgroundIcon: 'blue',
-
-
     background: '#FDFDFD',
     background2: '#F5FFFD',
 

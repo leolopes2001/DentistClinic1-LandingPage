@@ -19,11 +19,14 @@ export interface IPages {
 
 const LandingPage = () => {
   const { setSectionActiveSideBar } = useSideBar();
-  const homeRef = useRef<HTMLElement | null>(null);
-  const clinicServiceRef = useRef<HTMLDivElement | null>(null);
-  const schedulesRef = useRef<HTMLDivElement | null>(null);
-  const dentistRef = useRef<HTMLDivElement | null>(null);
-  const footerRef = useRef<HTMLDivElement | null>(null);
+  const homeRef = useRef<HTMLElement>(null);
+  const clinicServiceRef = useRef<HTMLDivElement>(null);
+  const schedulesRef = useRef<HTMLDivElement>(null);
+  const dentistRef = useRef<HTMLDivElement>(null);
+  const footerRef = useRef<HTMLDivElement>(null);
+  const benefitsRef = useRef<HTMLElement>(null);
+  const depositionsRef = useRef<HTMLElement>(null);
+  const patientsRef = useRef<HTMLElement>(null);
 
   const [sectionActive, setSectionActive] = useState<string>('');
 
@@ -58,7 +61,22 @@ const LandingPage = () => {
       options
     );
 
+    const observerBenefits = new IntersectionObserver(
+      (entries) => handleObserver('schedules', entries[0].intersectionRatio),
+      options
+    );
+
+    const observerDepositions = new IntersectionObserver(
+      (entries) => handleObserver('schedules', entries[0].intersectionRatio),
+      options
+    );
+
     const observerDentists = new IntersectionObserver(
+      (entries) => handleObserver('dentists', entries[0].intersectionRatio),
+      options
+    );
+
+    const observerPatients = new IntersectionObserver(
       (entries) => handleObserver('dentists', entries[0].intersectionRatio),
       options
     );
@@ -73,6 +91,9 @@ const LandingPage = () => {
     observerSchedules.observe(schedulesRef?.current as HTMLElement);
     observerDentists.observe(dentistRef?.current as HTMLElement);
     observerFooter.observe(footerRef?.current as HTMLElement);
+    observerPatients.observe(patientsRef?.current as HTMLElement);
+    observerBenefits.observe(benefitsRef?.current as HTMLElement);
+    observerDepositions.observe(patientsRef.current as HTMLElement);
   }, []);
 
   return (
@@ -81,10 +102,10 @@ const LandingPage = () => {
       <Home id='home' innerRef={homeRef} />
       <ClinicServices id='services' innerRef={clinicServiceRef} />
       <YourTimeHasCome id='schedules' innerRef={schedulesRef} />
-      <Benefits />
-      <Depositions />
+      <Benefits innerRef={benefitsRef} />
+      <Depositions innerRef={depositionsRef} />
       <Professionals id='dentists' innerRef={dentistRef} />
-      <PatientSay />
+      <PatientSay innerRef={patientsRef} />
       <Footer id='footer' innerRef={footerRef} />
     </>
   );

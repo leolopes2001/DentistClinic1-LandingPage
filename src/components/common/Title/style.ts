@@ -41,11 +41,12 @@ const TitleVariant = {
   `,
 
   title2: css`
+    font-family: 'Red Hat Display';
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 19px;
     color: #373f43;
-
     @media (min-width: 1200px) {
       font-weight: 500;
       font-size: 24px;

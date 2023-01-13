@@ -1,15 +1,18 @@
 import styled, { css } from 'styled-components';
+import convertToRem from '../../utils/convertToRem';
 import { SizeType } from './CircleIcon';
+
 export const Wrapper = styled.div<{ size: SizeType }>`
   background-color: ${({ theme }) => theme.colors.whiteFixed};
   border-radius: 50%;
   display: grid;
   place-items: center;
 
-  width: 50px;
-  height: 50px;
+  width: ${convertToRem(50)};
+  height: ${convertToRem(50)};
  
   svg {
+   
     path {
       fill: ${({ theme }) => theme.colors.primary};
     }
@@ -20,7 +23,7 @@ export const Wrapper = styled.div<{ size: SizeType }>`
   ${({ size }) =>
     size === 'home_desktop' &&
     css`
-      width: 90px;
-      height: 90px;
+      width: ${convertToRem(90)};
+      height: ${convertToRem(90)};
     `}
 `;

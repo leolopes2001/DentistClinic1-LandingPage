@@ -3,8 +3,9 @@ import { Slide, Slider, SliderProps } from '..';
 import Prof1 from '../../../assets/svg/slider/professionals/prof1.svg';
 import Prof2 from '../../../assets/svg/slider/professionals/prof2.svg';
 import Prof3 from '../../../assets/svg/slider/professionals/prof3.svg';
-import Prof4 from '../../../assets/svg/slider/professionals/prof3.svg';
+import Prof4 from '../../../assets/svg/slider/professionals/prof4.svg';
 import { doctors_cards_slider } from '../../../components-mock.json';
+import { Text } from '../../common/Text/style';
 
 const DoctorsImages = {
   0: Prof1,
@@ -101,7 +102,7 @@ const ProfessionalSlider = () => {
         <Slide key={id}>
           <div>
             <img src={DoctorsImages[id as 0 | 1 | 2 | 3]} alt='Doctor image' />
-            {/* <p>{name}</p> */}
+            <Text variant='text4'>{name}</Text>
           </div>
         </Slide>
       ))}

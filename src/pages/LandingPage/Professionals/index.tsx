@@ -41,13 +41,13 @@ const Professionals = ({ innerRef, id }: IPages) => {
           <ul
             className={`doctors_list style_length_${doctors_cards_slider.length}`}
           >
-            {doctors_cards_slider.map((doctor) => (
-              <li key={doctor.id}>
+            {doctors_cards_slider.map(({id,name}) => (
+              <li key={id}>
                 <img
-                  src={DoctorsImages[doctor.id as 0 | 1 | 2 | 3]}
+                  src={DoctorsImages[id as 0 | 1 | 2 | 3]}
                   alt='Doctor image'
                 />
-                <p>{doctor.name}</p>
+                <Text variant='text4'>{name}</Text>
               </li>
             ))}
           </ul>

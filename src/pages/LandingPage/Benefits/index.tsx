@@ -3,9 +3,10 @@ import Title from '../../../components/common/Title';
 import CardBenefit, { ICardBenefit } from './CardBenefit';
 import { GridHeader, SectionStyled } from './style';
 import { benefits } from '../../../components-mock.json';
+import { IPages } from '..';
 
-const Benefits = () => (
-  <SectionStyled>
+const Benefits = ({innerRef}:IPages) => (
+  <SectionStyled ref={innerRef}>
     <div className='content'>
       <GridHeader>
         <div>

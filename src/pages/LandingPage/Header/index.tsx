@@ -5,7 +5,7 @@ import useWindowSize from '../../../hooks/useWindowSize';
 import { HeaderStyled, Logo, NavStyled } from './style';
 import Phone from '../../../assets/svg/common/phone.svg';
 import Title from '../../../components/common/Title';
-import { navLiksData } from '../../../components-mock.json';
+import { navLiksData, address } from '../../../components-mock.json';
 
 const Header = ({ sectionActive }: { sectionActive: string }) => {
   const [width] = useWindowSize();
@@ -16,7 +16,7 @@ const Header = ({ sectionActive }: { sectionActive: string }) => {
         <NavStyled className='content'>
           <Title variant='numberCompany' tag='h6'>
             <img src={Phone} alt='phone' />
-            (37) 99119-7849
+            {address.phone}
           </Title>
 
           <div>

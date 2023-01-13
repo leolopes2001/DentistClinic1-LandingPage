@@ -24,8 +24,6 @@ const ContainerVariantMobile = {
     }
 
     .text {
-      font-family: 'Red Hat Display';
-      font-style: normal;
       font-weight: 400;
       font-size: 7.75791px;
       line-height: 10px;
@@ -35,8 +33,6 @@ const ContainerVariantMobile = {
     }
 
     .label {
-      font-family: 'Red Hat Display';
-      font-style: normal;
       font-weight: 500;
       font-size: 7.75791px;
       line-height: 10px;
@@ -45,6 +41,8 @@ const ContainerVariantMobile = {
     }
   `,
   two: css`
+    font-family: 'Inter';
+    font-style: normal;
     position: absolute;
     width: 108.5px;
     height: 49.57px;
@@ -64,18 +62,15 @@ const ContainerVariantMobile = {
     }
 
     .text {
-      font-family: 'Inter';
-      font-style: normal;
       font-weight: 500;
       font-size: 7.75791px;
       line-height: 9px;
       color: #3d3d3d;
       width: 80px;
+      
     }
 
     .label {
-      font-family: 'Inter';
-      font-style: normal;
       font-weight: 700;
       font-size: 18.1018px;
       line-height: 22px;
@@ -103,8 +98,6 @@ const ContainerVariantMobile = {
     }
 
     .text {
-      font-family: 'Red Hat Display';
-      font-style: normal;
       font-weight: 400;
       font-size: 7.75791px;
       line-height: 10px;
@@ -114,8 +107,6 @@ const ContainerVariantMobile = {
     }
 
     .label {
-      font-family: 'Red Hat Display';
-      font-style: normal;
       font-weight: 500;
       font-size: 7.75791px;
       line-height: 10px;
@@ -142,6 +133,8 @@ const ContainerVariantDesktop = {
     opacity: 1 !important;
   `,
   two: css`
+    font-family: 'Inter';
+    font-style: normal;
     position: absolute;
     width: 108.5px;
     height: 49.57px;
@@ -158,24 +151,22 @@ const ContainerVariantDesktop = {
       flex-direction: column;
       align-items: right;
       justify-content: center;
+      gap: 0;
     }
 
-    .text {
-      font-family: 'Inter';
-      font-style: normal;
+    .content_box .text {
       font-weight: 500;
-      font-size: 7.75791px;
-      line-height: 9px;
+      font-size: 18px;
+      line-height: 22px;
       color: #3d3d3d;
-      width: 80px;
+      width: 100px;
+      
     }
 
-    .label {
-      font-family: 'Inter';
-      font-style: normal;
+   .content_box .label {
       font-weight: 700;
-      font-size: 18.1018px;
-      line-height: 22px;
+      font-size: 42px;
+      line-height: 41px;
       color: #000000;
     }
   `,
@@ -200,8 +191,6 @@ const ContainerVariantDesktop = {
     }
 
     .text {
-      font-family: 'Red Hat Display';
-      font-style: normal;
       font-weight: 400;
       font-size: 7.75791px;
       line-height: 10px;
@@ -211,8 +200,6 @@ const ContainerVariantDesktop = {
     }
 
     .label {
-      font-family: 'Red Hat Display';
-      font-style: normal;
       font-weight: 500;
       font-size: 7.75791px;
       line-height: 10px;
@@ -226,6 +213,9 @@ export const Container = styled.div<{
   variant: ContainerVaritantType;
   size: SizeType;
 }>`
+  font-family: 'Raleway';
+  font-style: normal;
+
   ${({ variant, size }) =>
     size === 'mobile'
       ? ContainerVariantMobile[variant]

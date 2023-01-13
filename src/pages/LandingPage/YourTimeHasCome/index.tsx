@@ -22,19 +22,19 @@ const YourTimeHasCome = ({ innerRef, id }: IPages) => {
           <div className='box_img' data-aos='fade-up'>
             <CircleIconPlus
               variant='three'
-              icon='bag'
+              icon='addPerson'
               size={width > 1200 ? 'desktop' : 'mobile'}
               label='Dr. Thiago'
               text2='Cirurgião dentista'
               className='icon-one'
             />
             <CircleIcon
-              icon='bag'
+              icon='brushing'
               size={width > 1200 ? 'home_desktop' : 'mobile'}
               className='icon-two'
             />
             <CircleIcon
-              icon='bag'
+              icon='mouth'
               size={width > 1200 ? 'home_desktop' : 'mobile'}
               className='icon-three'
             />
