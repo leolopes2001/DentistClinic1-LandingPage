@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 export interface ILinkProps {
   href?: string;
-  variant: 'primary' | 'navLink' | 'clinicService' | 'benefit';
+  variant: 'primary' | 'navLink' | 'clinicService' | 'benefit' | 'youtube';
   children: ReactNode;
   className?: string;
   onClick?: () => void;

@@ -2,14 +2,8 @@ import styled, { css } from 'styled-components';
 
 const SliderWrapVariant = {
   type1: css`
-    position: relative;
-
     .swiper {
       width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      align-items: center;
       padding: 16px;
     }
 
@@ -17,7 +11,6 @@ const SliderWrapVariant = {
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #fff;
     }
 
     .swiper-button-next,
@@ -31,10 +24,9 @@ const SliderWrapVariant = {
       position: absolute;
       text-align: center;
       transform: translateY(-50%);
-      color: #000000;
       transition: all 0.4s ease 0s;
       border-radius: 50%;
-
+      color: #718096;
       &:hover {
         color: #212121;
       }
@@ -61,18 +53,6 @@ const SliderWrapVariant = {
       }
     }
 
-    .swiper-button-disabled {
-      opacity: 0.1;
-    }
-
-    .swiper-button-prev {
-      color: #718096;
-    }
-
-    .swiper-button-next {
-      color: #718096;
-    }
-
     .swiper-pagination-bullet:hover,
     .swiper-pagination-bullet-active {
       background-color: #ff7004;
@@ -88,15 +68,18 @@ const SliderWrapVariant = {
     }
   `,
   type3: css`
-    position: relative;
-    max-width: 600px;
-    left: -2rem;
+    width: 100%;
+  
+    max-width: 530px;
 
     .video_card {
-      min-width: 220px;
-      height: 400px;
-      background-color: black;
+      position: relative;
       border-radius: 2rem;
+      width: 100%;
+      
+
+      max-width: 300px;
+      height: 420px;
 
       img {
         object-fit: cover;
@@ -107,28 +90,24 @@ const SliderWrapVariant = {
     }
 
     .swiper {
-      width: 100%;
       display: flex;
-      align-items: end;
+      align-items: center;
       justify-content: end;
-
-      padding-left: 5rem;
+      align-items: flex-end;
+     
     }
 
     .swiper-slide {
-      min-width: 250px;
-      max-width: 250px;
-      margin-right: 3rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
     }
   `,
 
   type4: css`
     .swiper {
       padding: 36px 0px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -154,34 +133,17 @@ const SliderWrapVariant = {
     .swiper-pagination-bullet-active {
       background-color: #718096;
     }
-
-    .swiper-button-prev {
-      color: #718096;
-    }
-
-    .swiper-button-next {
-      color: #718096;
-    }
   `,
   type5: css`
-    position: relative;
-
     .swiper {
       max-height: 265px;
       min-height: 265px;
-
-      width: 100%;
       margin-left: auto;
       margin-right: auto;
-      display: flex;
-      align-items: center;
-
       margin-top: 1rem;
-
       margin-top: 0;
       margin-bottom: 1rem;
       padding-bottom: 4rem;
-      justify-content: center;
       padding: 0 1rem;
 
       @media (min-width: 900px) {
@@ -345,6 +307,14 @@ export const SliderWrap = styled.div<{
   variant: 'type1' | 'type3' | 'type4' | 'type5';
 }>`
   min-width: 0;
+  position: relative;
+
+  .swiper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   ${({ variant }) => SliderWrapVariant[variant]}
 `;

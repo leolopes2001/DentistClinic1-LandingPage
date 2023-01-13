@@ -12,7 +12,6 @@ export const Wrapper = styled.div<{ size: SizeType }>`
   height: ${convertToRem(50)};
  
   svg {
-   
     path {
       fill: ${({ theme }) => theme.colors.primary};
     }

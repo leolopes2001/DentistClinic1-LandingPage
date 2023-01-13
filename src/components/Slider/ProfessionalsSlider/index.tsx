@@ -1,4 +1,3 @@
-import { SwiperOptions } from 'swiper';
 import { Slide, Slider, SliderProps } from '..';
 import Prof1 from '../../../assets/svg/slider/professionals/prof1.svg';
 import Prof2 from '../../../assets/svg/slider/professionals/prof2.svg';

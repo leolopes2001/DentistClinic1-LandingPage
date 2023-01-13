@@ -11,18 +11,19 @@ const Depositions = ({ innerRef }: IPages) => (
       <GridHeader className='grid'>
         <div>
           <Title tag='h3' variant='title2' main_title={true}>
-            Clínica Geral
+            Depoimentos
           </Title>
         </div>
         <Title tag='h3' variant='title3' className='general_title'>
-          Veja nossos tratamentos
+          Assista a depoimentos de clientes
         </Title>
         <Text variant='text2' data-aos='fade-left'>
-          Cuidamos da sua saúde bucal e oferecemos todos os tratamentos
-          odontológicos que você precisa.
+          Gostamos de mostrar a alegria e felicidade dos pacientes que realizam
+          tratamentos em nossa clínica. Queremos que você faça parte desta
+          história.
         </Text>
         <Link href='' variant='primary'>
-          Eu Quero
+          Nosso YouTube
         </Link>
       </GridHeader>
 

@@ -2,7 +2,7 @@ import CircleIcon from '../CircleIcon';
 import { CircleIconType, SizeType } from '../CircleIcon/CircleIcon';
 import { Container } from './style';
 
-export type ContainerVaritantType = 'one' | 'two' | "three";
+export type ContainerVaritantType = 'one' | 'two' | 'three'
 
 interface ICircleIconPlus {
   variant: ContainerVaritantType;

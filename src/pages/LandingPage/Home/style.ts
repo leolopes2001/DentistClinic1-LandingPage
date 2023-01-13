@@ -13,6 +13,9 @@ export const HomeStyled = styled.main`
   > .content {
     background-color: ${({ theme }) => theme.colors.background2};
   }
+
+  
+  
 `;
 
 export const AsideDiv = styled.div`

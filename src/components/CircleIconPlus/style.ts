@@ -1,14 +1,14 @@
 import styled, { css } from 'styled-components';
 import { ContainerVaritantType } from '.';
+import convertToRem from '../../utils/convertToRem';
 import { SizeType } from '../CircleIcon/CircleIcon';
-
 const ContainerVariantMobile = {
   one: css`
     position: absolute;
-    width: 79.21px;
-    height: 72.83px;
-    background: #ffffff;
-    border-radius: 10.3439px;
+    width: ${convertToRem(79.21)};
+    height: ${convertToRem(72.83)};
+    background: ${({ theme }) => theme.colors.whiteFixed};
+    border-radius: ${convertToRem(10.34)};
 
     display: flex;
     align-items: center;
@@ -26,27 +26,28 @@ const ContainerVariantMobile = {
     .text {
       font-weight: 400;
       font-size: 7.75791px;
-      line-height: 10px;
+      font-size: ${convertToRem(7.75)};
+      line-height: ${convertToRem(10)};
       text-align: center;
       color: #49545a;
-      width: 50px;
+      width: ${convertToRem(50)};
     }
 
     .label {
       font-weight: 500;
-      font-size: 7.75791px;
-      line-height: 10px;
+      font-size: ${convertToRem(7.75)};
+      line-height: ${convertToRem(10)};
       text-align: center;
-      color: #373f43;
+      color: ${({ theme }) => theme.colors.grey2};
     }
   `,
   two: css`
     font-family: 'Inter';
     font-style: normal;
     position: absolute;
-    width: 108.5px;
-    height: 49.57px;
-    background: #ffffff;
+    width: ${convertToRem(108.5)};
+    height: ${convertToRem(49.57)};
+    background: ${({ theme }) => theme.colors.whiteFixed};
     border-radius: 10.3439px;
     display: flex;
     justify-content: center;
@@ -63,26 +64,25 @@ const ContainerVariantMobile = {
 
     .text {
       font-weight: 500;
-      font-size: 7.75791px;
-      line-height: 9px;
-      color: #3d3d3d;
-      width: 80px;
-      
+      font-size: ${convertToRem(7.75)};
+      line-height: ${convertToRem(9)};
+      color: ${({ theme }) => theme.colors.grey4};
+      width: ${convertToRem(80)};
     }
 
     .label {
       font-weight: 700;
-      font-size: 18.1018px;
-      line-height: 22px;
-      color: #000000;
+      font-size: ${convertToRem(18.1)};
+      line-height: ${convertToRem(22)};
+      color: ${({ theme }) => theme.colors.blackFixed};
     }
   `,
   three: css`
     position: absolute;
-    width: 79.21px;
-    height: 72.83px;
-    background: #ffffff;
-    border-radius: 10.3439px;
+    width: ${convertToRem(79.21)};
+    height: ${convertToRem(72.83)};
+    background: ${({ theme }) => theme.colors.whiteFixed};
+    border-radius: ${convertToRem(10.34)};
 
     display: flex;
     align-items: center;
@@ -100,18 +100,19 @@ const ContainerVariantMobile = {
     .text {
       font-weight: 400;
       font-size: 7.75791px;
-      line-height: 10px;
+      font-size: ${convertToRem(7.75)};
+      line-height: ${convertToRem(10)};
       text-align: center;
-      color: #49545a;
-      width: 50px;
+      color: ${({ theme }) => theme.colors.grey5};
+      width: ${convertToRem(50)};
     }
 
     .label {
       font-weight: 500;
-      font-size: 7.75791px;
-      line-height: 10px;
+      font-size: ${convertToRem(7.75)};
+      line-height: ${convertToRem(10)};
       text-align: center;
-      color: #373f43;
+      color: ${({ theme }) => theme.colors.grey2};
     }
   `,
 };
@@ -160,10 +161,9 @@ const ContainerVariantDesktop = {
       line-height: 22px;
       color: #3d3d3d;
       width: 100px;
-      
     }
 
-   .content_box .label {
+    .content_box .label {
       font-weight: 700;
       font-size: 42px;
       line-height: 41px;
@@ -176,7 +176,7 @@ const ContainerVariantDesktop = {
     height: 72.83px;
     background: #ffffff;
     border-radius: 10.3439px;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,6 +188,7 @@ const ContainerVariantDesktop = {
       align-items: center;
       justify-content: center;
       padding-bottom: 0.4rem;
+
     }
 
     .text {
@@ -197,6 +198,7 @@ const ContainerVariantDesktop = {
       text-align: center;
       color: #49545a;
       width: 50px;
+      
     }
 
     .label {

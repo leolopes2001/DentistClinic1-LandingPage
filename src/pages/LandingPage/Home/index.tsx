@@ -11,6 +11,8 @@ import CompanyLogo from '../../../assets/svg/agendaConsultaLogo.svg';
 import useWindowSize from '../../../hooks/useWindowSize';
 import { IPages } from '..';
 
+import bag from '../../../assets/svg/desktop/bag.svg';
+
 const Home = ({ innerRef, id }: IPages) => {
   const [width] = useWindowSize();
   return (

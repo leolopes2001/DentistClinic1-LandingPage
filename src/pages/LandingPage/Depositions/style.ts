@@ -5,10 +5,27 @@ export const StyledSection = styled.section`
   overflow: hidden;
 
   background-color: ${({ theme }) => theme.colors.background};
+
+  .general_title {
+    width: 100%;
+    max-width: 300px;
+  }
+  @media (min-width: 320px) {
+    .general_title {
+      max-width: 320px;
+    }
+  }
+  @media (min-width: 450px) {
+    .general_title {
+      max-width: 340px;
+    }
+  }
+
   > .content {
-    @media (min-width: 1000px) {
+    @media (min-width: 700px) {
       display: flex;
       flex-direction: row-reverse;
+      gap: 2rem;
     }
   }
 
@@ -24,6 +41,10 @@ export const GridHeader = styled.div`
   width: 100%;
   padding: 1rem;
 
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
   p {
     max-width: ${convertToRem(222)};
   }
@@ -43,6 +64,9 @@ export const GridHeader = styled.div`
   }
 
   @media (min-width: 1200px) {
+    .general_title {
+      min-width: 650px;
+    }
     p {
       max-width: ${convertToRem(600)};
     }

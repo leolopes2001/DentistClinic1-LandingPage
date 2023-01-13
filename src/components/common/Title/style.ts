@@ -55,7 +55,6 @@ const TitleVariant = {
   `,
 
   title3: css`
-    width: 320px;
     font-weight: 700;
     font-size: 28px;
     line-height: 40px;
