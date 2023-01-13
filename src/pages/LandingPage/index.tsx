@@ -1,8 +1,8 @@
 import { RefObject, useEffect, useRef, useState } from 'react';
+import { useSideBar } from '../../contexts/SideBarProvider';
 import Header from './Header';
 import Home from './Home';
 import Aos from 'aos';
-import 'aos/dist/aos.css';
 import ClinicServices from './ClinicServices';
 import YourTimeHasCome from './YourTimeHasCome';
 import Depositions from './Depositions';
@@ -10,8 +10,7 @@ import Professionals from './Professionals';
 import Footer from './Footer';
 import PatientSay from './PatientSays';
 import Benefits from './Benefits';
-import useWindowSize from '../../hooks/useWindowSize';
-import { useSideBar } from '../../contexts/SideBarProvider';
+import 'aos/dist/aos.css';
 
 export interface IPages {
   id?: string;

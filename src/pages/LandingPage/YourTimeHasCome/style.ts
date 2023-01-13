@@ -2,16 +2,12 @@ import styled from 'styled-components';
 import convertToRem from '../../../utils/convertToRem';
 
 export const StyledSection = styled.section`
-padding-top: 5rem;
-  background-color: ${({ theme }) => theme.colors.background};
   overflow: hidden;
+  padding-top: 5rem;
+  background-color: ${({ theme }) => theme.colors.background};
+
   > .content {
     min-width: 0;
-
-    .general_clinic_title {
-      max-width: 270px;
-      min-width: 270px;
-    }
 
     @media (min-width: 1000px) {
       display: grid;
@@ -21,14 +17,6 @@ padding-top: 5rem;
 
     @media (min-width: 1200px) {
       gap: 5rem;
-      .general_clinic_title {
-        min-width: 500px;
-      }
-    }
-    @media (min-width: 1300px) {
-      .general_clinic_title {
-        min-width: 550px;
-      }
     }
   }
 
@@ -39,11 +27,11 @@ padding-top: 5rem;
   }
 
   .box_img {
-    max-width: 229.69px;
-    min-width: 229.69px;
-    max-height: 229.69px;
-    min-height: 229.69px;
-    background: #f1fffc;
+    max-width: ${convertToRem(229.69)};
+    min-width: ${convertToRem(229.69)};
+    max-height: ${convertToRem(229.69)};
+    min-height: ${convertToRem(229.69)};
+    background: ${({ theme }) => theme.colors.background2};
     border-radius: 50%;
     display: flex;
     align-items: flex-end;
@@ -56,9 +44,9 @@ padding-top: 5rem;
 
     .icon-one {
       position: absolute;
-      top: -20px;
-      right: -20px;
-      min-width: 100px;
+      top: ${convertToRem(-20)};
+      right: ${convertToRem(-20)};
+      min-width: ${convertToRem(100)};
     }
 
     .icon-one,
@@ -69,36 +57,37 @@ padding-top: 5rem;
     }
 
     .icon-two {
-      bottom: 10px;
-      right: 2px;
+      bottom: ${convertToRem(10)};
+      right: ${convertToRem(2)};
       z-index: 999;
     }
     .icon-three {
-      top: 10px;
-      left: 10px;
+      top: ${convertToRem(10)};
+      left: ${convertToRem(10)};
     }
 
     .icon-four {
-      left: -40px;
-      width: 134px;
-      height: 62px;
+      left: ${convertToRem(-40)};
+      width: ${convertToRem(134)};
+      height: ${convertToRem(62)};
       display: flex;
       gap: 1rem;
       padding: 0.5rem;
-      border-radius: 24px;
+      border-radius: ${convertToRem(24)};
       background-color: ${({ theme }) => theme.colors.whiteFixed};
       .img {
         display: flex;
         align-items: center;
         justify-content: center;
-        min-width: 44.26px;
-        height: 36px;
+
+        min-width: ${convertToRem(44.26)};
+        height: ${convertToRem(36)};
 
         img {
           border-radius: 50%;
-          height: 35px;
+          height: ${convertToRem(35)};
           padding: 0.5rem;
-          background: #49545a;
+          background: ${({ theme }) => theme.colors.grey5};
         }
       }
 
@@ -110,80 +99,80 @@ padding-top: 5rem;
 
         h6 {
           font-weight: 700;
-          font-size: 16px;
-          line-height: 19px;
-          color: #000000;
+          font-size: ${convertToRem(16)};
+          line-height: ${convertToRem(19)};
+          color: ${({ theme }) => theme.colors.blackFixed};
         }
         p {
           font-weight: 500;
-          font-size: 12px;
-          line-height: 15px;
-          color: #3d3d3d;
+          font-size: ${convertToRem(12)};
+          line-height: ${convertToRem(15)};
+          color: ${({ theme }) => theme.colors.grey4};
         }
       }
     }
 
     @media (min-width: 1200px) {
-      max-width: 450px;
-      min-width: 450px;
-      max-height: 450px;
-      min-height: 450px;
+      max-width: ${convertToRem(450)};
+      min-width: ${convertToRem(450)};
+      max-height: ${convertToRem(450)};
+      min-height: ${convertToRem(450)};
 
       .doctor {
         transform: translateX(-2px);
       }
 
       .icon-one {
-        top: -50px;
-        right: -60px;
-        min-width: 100px;
+        top: ${convertToRem(-50)};
+        right: ${convertToRem(-60)};
+        min-width: ${convertToRem(100)};
         z-index: 999;
+        width: ${convertToRem(177)};
+        height: ${convertToRem(162)};
 
-        width: 177px;
-        height: 162px;
         label,
         p {
           font-weight: 400;
-          font-size: 18px;
+          font-size: ${convertToRem(18)};
           width: 100%;
-          line-height: 24px;
+          line-height: ${convertToRem(24)};
         }
       }
 
       .icon-two {
-        bottom: 10px;
-        right: 15px;
+        bottom: ${convertToRem(10)};
+        right: ${convertToRem(15)};
       }
 
       .icon-three {
-        top: 10px;
-        left: 15px;
+        top: ${convertToRem(10)};
+        left: ${convertToRem(15)};
         z-index: 999;
       }
 
       .icon-four {
-        width: 252px;
-        height: 115px;
+        width: ${convertToRem(252)};
+        height: ${convertToRem(115)};
 
         .img {
           height: 100%;
 
           img {
-            width: 40px;
-            min-width: 40px;
-            min-height: 50px;
+            width: ${convertToRem(40)};
+            min-width: ${convertToRem(40)};
+            min-height: ${convertToRem(50)};
           }
         }
 
         .text {
           h6 {
-            font-size: 36px;
-            line-height: 51px;
+            font-size: ${convertToRem(36)};
+            line-height: ${convertToRem(51)};
           }
 
           p {
-            font-size: 18px;
-            line-height: 22px;
+            font-size: ${convertToRem(18)};
+            line-height: ${convertToRem(22)};
           }
         }
       }
@@ -196,29 +185,52 @@ export const GridHeader = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 0.5 1fr 1fr 1fr;
   width: 100%;
-  margin-top: ${convertToRem(43)};
+
   padding: 1rem;
-  & > .general_clinic_title {
+
+  p {
+    max-width: ${convertToRem(220)};
+  }
+
+  & > .general_title {
     margin-top: 1rem;
     width: 100%;
     height: auto;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-  }
-
-  p {
-    max-width: 220px;
+    max-width: ${convertToRem(270)};
+    min-width: ${convertToRem(270)};
   }
 
   @media (min-width: 320px) {
     p {
-      min-width: 280px;
+      min-width: ${convertToRem(280)};
     }
   }
+
+  @media (max-width: 1000px) {
+    margin-top: ${convertToRem(43)};
+   
+  }
+
   @media (min-width: 1200px) {
+    .general_title {
+      min-width: ${convertToRem(500)};
+    }
+
     p {
-      min-width: 506px;
+      min-width: ${convertToRem(450)};
+      max-width: ${convertToRem(450)};
+    }
+  }
+  @media (min-width: 1350px) {
+    .general_title {
+      min-width: ${convertToRem(600)};
+    }
+
+    p {
+      min-width: ${convertToRem(506)};
     }
   }
 `;

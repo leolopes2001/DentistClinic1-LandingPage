@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 import convertToRem from '../utils/convertToRem';
 
 export default createGlobalStyle`
-
     *{
         padding: 0;
         margin: 0;
@@ -10,19 +9,12 @@ export default createGlobalStyle`
         outline: 0;
     }
 
-   
-
     body, #root{
         position: relative;
-        /* min-height: 100vh; */
-
-
-         height: -webkit-fill-available;
-     
+        height: -webkit-fill-available;
     }
 
-
-    ul{
+    ul,ol{
       list-style: none;
     }
 
@@ -35,16 +27,7 @@ export default createGlobalStyle`
         position: relative;
     }
 
- 
-
-
     .hide-scroll{
         overflow: hidden !important;
     }
-
-    path: {
-    color: red;
-    background-color: red;
-    fill: #fce57e;
-  }
 `;

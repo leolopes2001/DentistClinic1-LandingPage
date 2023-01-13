@@ -8,11 +8,10 @@ export const HomeStyled = styled.main`
 
   overflow: hidden;
 
-  background-color: #F5FFFD;
-  
-  & > .content{
-    
-    background-color: #F5FFFD;
+  background-color: ${({ theme }) => theme.colors.background2};
+
+  > .content {
+    background-color: ${({ theme }) => theme.colors.background2};
   }
 `;
 
@@ -80,28 +79,24 @@ export const Container = styled.div`
       left: 30%;
       p {
         font-weight: 500;
-        font-size: 18px;
-        line-height: 16px;
-        color: #3d3d3d;
-        width: 100px;
+        font-size: ${convertToRem(18)};
+        line-height: ${convertToRem(16)};
+        color: ${({ theme }) => theme.colors.grey4};
+        width: ${convertToRem(100)};
       }
 
       label {
         font-weight: 700;
-        font-size: 34px;
-        line-height: 51px;
-        color: #000000;
+        font-size: ${convertToRem(34)};
+        line-height: ${convertToRem(51)};
+        color: ${({ theme }) => theme.colors.blackFixed};
       }
-
-    
     }
   }
 
   min-height: 92vh;
   max-height: 92vh;
   transform: translateY(8vh);
-
-  /* overflow: hidden; */
   width: 100%;
   background-color: ${({ theme }) => theme.colors.background};
   position: relative;

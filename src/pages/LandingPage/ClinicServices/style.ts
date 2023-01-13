@@ -9,33 +9,33 @@ export const GridHeader = styled.div`
   width: 100%;
   margin-top: ${convertToRem(13)};
   padding: 1rem;
-  min-width: 400px;
+  min-width: ${convertToRem(400)};
 
-  & > .general_clinic_title {
+  > .general_title {
     margin-top: 1rem;
     display: flex;
     justify-content: flex-start;
   }
 
-  & > p {
-    max-width: 230px;
+  > p {
+    max-width: ${convertToRem(230)};
     vertical-align: baseline;
     display: flex;
     align-items: center;
 
     @media (min-width: 314px) {
-      max-width: 280px;
+      max-width: ${convertToRem(280)};
     }
     @media (min-width: 324px) {
-      max-width: 290px;
+      max-width: ${convertToRem(290)};
     }
     @media (min-width: 1200px) {
-      max-width: 500px;
+      max-width: ${convertToRem(500)};
     }
   }
   @media (min-width: 480px) {
-    & > .general_clinic_title {
-      min-width: 450px;
+    > .general_title {
+      min-width: ${convertToRem(450)};
     }
   }
 
@@ -47,7 +47,7 @@ export const GridHeader = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 1fr;
 
-    .general_clinic_title {
+    .general_title {
       width: 685px;
       grid-template-columns: 1/2;
 

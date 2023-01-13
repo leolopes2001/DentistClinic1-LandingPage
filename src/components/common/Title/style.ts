@@ -99,6 +99,18 @@ const TitleVariant = {
     }
   `,
 
+  title6: css`
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #49545a;
+
+    @media (min-width: 1200px) {
+      font-size: 28px;
+      line-height: 37px;
+    }
+  `,
+
   numberCompany: css`
     font-style: normal;
     font-weight: 400;
@@ -133,7 +145,7 @@ export const Wrapper = styled.div`
     height: 1px;
     background-color: ${({ theme }) => theme.colors.primary};
 
-    @media (min-width: 600px){
+    @media (min-width: 600px) {
       min-width: 250px;
       width: 50%;
       max-width: 250px;

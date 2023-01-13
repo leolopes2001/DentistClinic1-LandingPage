@@ -2,8 +2,6 @@ export default {
   title: 'default',
   colors: {
     primary: '#DE0D1D',
-   
-
     secondary: '#20C5AF',
 
     grey0: '#2E3538',
@@ -13,12 +11,14 @@ export default {
     grey5: '#49545A',
     grey6: '#606F76',
 
-    icon: 'FFB200',
-    backgroundIcon: 'FFF3D6',
+    // icon: 'FFB200',
+    icon: 'blue',
+    // backgroundIcon: 'FFF3D6',
+    backgroundIcon: 'blue',
 
-    
+
     background: '#FDFDFD',
-    background2: '#E5E5E5',
+    background2: '#F5FFFD',
 
     whiteFixed: '#fff',
     blackFixed: '#00000',

@@ -19,7 +19,7 @@ export const HeaderStyled = styled.header`
   }
 
   @media (min-width: 1200px) {
-    background-color: #f5fffd;
+    background-color: ${({theme}) => theme.colors.background2};
   }
 `;
 
@@ -36,7 +36,7 @@ export const NavStyled = styled.nav`
   > div {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: ${convertToRem(60)};
     justify-content: end;
   }
 
@@ -49,14 +49,14 @@ export const NavStyled = styled.nav`
 
   .active {
     font-weight: 800;
-    font-size: 20px;
-    line-height: 23px;
-    color: #49545a;
+    font-size: ${convertToRem(20)};
+    line-height: ${convertToRem(23)};
+    color: ${({theme}) => theme.colors.grey5};
 
   }
 
   @media (min-width: 1200px) {
-    background-color: #f5fffd;
+    background-color: ${({theme}) => theme.colors.background2};
   }
 `;
 

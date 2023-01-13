@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 import { BaseTitle, Wrapper } from './style';
 
-interface ITitleProps {
+export interface IBaseTitleProps {
   tag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   className?: string;
   children: ReactNode;
@@ -13,21 +13,26 @@ interface ITitleProps {
     | 'title3'
     | 'title4'
     | 'title5'
+    | 'title6'
     | 'numberCompany';
   main_title?: boolean;
+  animation?: boolean;
 }
 
 export const Title = ({
+  animation = true,
   children,
   tag,
   variant,
   className,
   main_title,
-}: ITitleProps) => {
+}: IBaseTitleProps) => {
+  const getAnimation = () => animation && { 'data-aos': 'fade-right' };
+
   return (
     <>
       {main_title ? (
-        <Wrapper data-aos='fade-right'>
+        <Wrapper {...getAnimation()}>
           <div className='box_title'>
             <div className='circle' />
             <BaseTitle tag={tag} variant={variant} className={className}>
@@ -40,8 +45,8 @@ export const Title = ({
         <BaseTitle
           tag={tag}
           variant={variant}
-          data-aos='fade-right'
           className={className}
+          {...getAnimation()}
         >
           {children}
         </BaseTitle>

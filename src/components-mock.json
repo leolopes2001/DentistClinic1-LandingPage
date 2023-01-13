@@ -1,4 +1,5 @@
 {
+  "clinic_link": "https://agendaconsulta.com/",
   "services": [
     {
       "img": "toothTwo",
@@ -49,7 +50,6 @@
       "name": "Suzane Lima"
     }
   ],
-  
   "patients_opinion": [
     {
       "id": 0,
@@ -76,24 +76,28 @@
   "benefits": [
     {
       "id": 0,
+      "href": null,
       "title": "Agendamento Online",
       "text": "Agende sua avaliação sem sair de casa",
       "btn": "Agendar Agora"
     },
     {
       "id": 1,
+      "href": "#footer",
       "title": "Aberto 10hs por dia",
       "text": "Horário de atendimento de 08:00 às 18:00hs.",
       "btn": "Como Chegar"
     },
     {
       "id": 2,
+      "href": "#services",
       "title": "Financiamentos",
       "text": "Parceria com bancos e financeiras",
       "btn": "Ver tratamentos"
     },
     {
       "id": 3,
+      "href": "#dentists",
       "title": "Mais Facilidades",
       "text": "Fácil localização, atendimento rápido e humanizado.",
       "btn": "Ver Profissionais"
@@ -120,5 +124,25 @@
       "id": "footer",
       "name": "Como chegar"
     }
+  ],
+  "address": {
+    "street": "Rua Godolfredo Gonçalves",
+    "cep": "Cep: 35681-047",
+    "number_room_neighborhood": "375 - Sala 01 - Centro",
+    "phone": "(37) 99119-7849",
+    "city": "Itaúna - MG",
+    "company": "agendaconsulta.com"
+  },
+  "footer_services": [
+    "Clínica Geral",
+    "Implante dentário",
+    "Prótese dentária",
+    "Clareamento",
+    "Harmonização",
+    "Aparelho Dental",
+    "Alinhadores Invisíveis",
+    "Botox",
+    "Extração",
+    "Limpeza Dentária"
   ]
 }

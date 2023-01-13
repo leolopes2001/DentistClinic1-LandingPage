@@ -49,7 +49,6 @@ export const TextVariant = {
 
   text3: css`
     width: 144px;
-    /* height: 64px; */
     left: 35px;
     top: 952px;
     font-weight: 400;

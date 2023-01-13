@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import convertToRem from '../../../../utils/convertToRem';
 
 const fadeUp = keyframes`
   from{
@@ -27,10 +28,11 @@ export const Wrapper = styled.div`
   position: relative;
   animation: ${fadeUp} ease-in-out 1000ms;
   overflow-x: visible;
+
   @media (min-width: 1200px) {
     position: absolute;
-    right: -250px;
-    bottom: -4px;
+    right: ${convertToRem(-250)};
+    bottom: ${convertToRem(-4)};
     display: block;
     transition: all 500ms;
 

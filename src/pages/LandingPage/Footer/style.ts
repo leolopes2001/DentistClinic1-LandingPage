@@ -1,36 +1,43 @@
 import styled from 'styled-components';
+import convertToRem from '../../../utils/convertToRem';
 
 export const FooterStyled = styled.footer`
   background: #f5f5f5;
   overflow-x: hidden;
 
+  .text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: ${convertToRem(12)};
+    line-height: ${convertToRem(14)};
+    color: #373f43;
+
+    @media (min-width: 1200px) {
+      font-size: ${convertToRem(20)};
+      line-height: ${convertToRem(23)};
+    }
+  }
+
   .services ul {
     display: flex;
-    gap: 20px;
+    gap: ${convertToRem(20)};
     flex-direction: column;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2rem 0;
     width: 100%;
-    max-width: 700px;
-  }
-  .services li,
-  .howArrive li {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #373f43;
+    max-width: ${convertToRem(700)};
   }
 
   .howArrive ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    gap: ${convertToRem(20)};
     margin: 2rem 0;
     width: 100%;
-    max-width: 700px;
-
+    max-width: ${convertToRem(700)};
     margin-bottom: 0;
   }
 
@@ -48,7 +55,7 @@ export const FooterStyled = styled.footer`
 
   .all_rights_reserved {
     width: 100%;
-    height: 100px;
+    height: ${convertToRem(100)};
     min-width: 100vw;
     background-color: ${({ theme }) => theme.colors.whiteFixed};
     display: flex;
@@ -59,16 +66,18 @@ export const FooterStyled = styled.footer`
     p {
       text-align: center;
       padding: 0 0.5rem;
+      line-height: ${convertToRem(14)};
     }
   }
 
-  .additional_text {
-    display: none;
-  }
   @media (min-width: 1200px) {
     .all_rights_reserved {
       flex-direction: row;
-      height: 80px;
+      height: ${convertToRem(80)};
+
+      p {
+        line-height: ${convertToRem(23)};
+      }
     }
 
     & > .content {
@@ -79,39 +88,7 @@ export const FooterStyled = styled.footer`
 
     .services ul li,
     .howArrive ul li {
-   
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 23px;
       margin-right: 1.5rem;
-      color: #373f43;
-    }
-  
-    .services h3,.howArrive h3 {
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 37px;
-    }
-
-    .additional_text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 50px;
-      }
-      p {
-        max-width: 300px;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 23px;
-        color: #373f43;
-      }
     }
   }
 `;

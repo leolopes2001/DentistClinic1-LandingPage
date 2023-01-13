@@ -29,7 +29,7 @@ const Professionals = ({ innerRef, id }: IPages) => {
               Profissionais
             </Title>
           </div>
-          <Title tag='h3' variant='title3' className='general_clinic_title'>
+          <Title tag='h3' variant='title3' className='general_title'>
             Vejas os seus dentistas
           </Title>
           <Text variant='text2' data-aos='fade-left'>

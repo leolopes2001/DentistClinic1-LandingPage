@@ -3,10 +3,9 @@ import convertToRem from '../../../utils/convertToRem';
 
 export const StyledSection = styled.section`
   padding-top: 2rem;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
   background-color: ${({ theme }) => theme.colors.background};
-  & > .content {
+  > .content {
     .doctors_list {
       display: flex;
       align-items: center;
@@ -14,13 +13,13 @@ export const StyledSection = styled.section`
 
       li {
         position: relative;
-        min-width: 260px;
-        max-width: 260px;
-        min-height: 340px;
+        min-width: ${convertToRem(260)};
+        max-width: ${convertToRem(260)};
+        min-height: ${convertToRem(340)};
         transition: transform 400ms;
 
         img {
-          max-height: 340px;
+          max-height: ${convertToRem(340)};
           width: 100%;
           object-fit: cover;
         }
@@ -29,9 +28,9 @@ export const StyledSection = styled.section`
           font-family: 'Manrope';
           font-style: normal;
           font-weight: 700;
-          font-size: 24px;
-          line-height: 32px;
-          letter-spacing: 0.374px;
+          font-size: ${convertToRem(24)};
+          line-height: ${convertToRem(32)};
+          letter-spacing: ${convertToRem(0.374)};
           color: ${({ theme }) => theme.colors.whiteFixed};
           transition: all 400ms;
           opacity: 0;
@@ -60,8 +59,6 @@ export const StyledSection = styled.section`
     .style_length_2 {
       justify-content: space-evenly;
     }
-    
-    
   }
 
   @media (min-width: 1200px) {
@@ -76,26 +73,26 @@ export const GridHeader = styled.div`
   margin-top: ${convertToRem(13)};
   width: 100%;
   padding: 1rem;
-  & > .general_clinic_title {
+  & > .general_title {
     margin-top: 1rem;
-    min-width: 250px;
-    max-width: 250px;
+    min-width: ${convertToRem(250)};
+    max-width: ${convertToRem(250)};
   }
 
   p {
-    max-width: 220px;
+    max-width: ${convertToRem(220)};
   }
 
   @media (min-width: 400px) {
-    & > .general_clinic_title {
+    .general_title {
       display: flex;
       justify-content: flex-start;
-      min-width: 400px;
-      max-width: 400px;
+      min-width: ${convertToRem(400)};
+      max-width: ${convertToRem(400)};
     }
 
     p {
-      min-width: 400px;
+      min-width: ${convertToRem(400)};
     }
   }
 
@@ -105,14 +102,14 @@ export const GridHeader = styled.div`
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 100px 100px;
 
-    .general_clinic_title {
+    .general_title {
       width: 100%;
       margin-top: 0;
       line-height: normal;
       display: flex;
-      min-width: 685px;
+      min-width: ${convertToRem(685)};
       justify-content: end;
-      max-width: 800px;
+      max-width: ${convertToRem(800)};
       justify-self: end;
     }
 

@@ -11,6 +11,7 @@ export interface ICardBenefit {
   title: string;
   text: string;
   btn: string;
+  href?: string 
 }
 
 const BenefitVariantImg: { 0: 'internet'; 1: 'clock'; 2: 'folks'; 3: 'bag' } = {
@@ -20,7 +21,7 @@ const BenefitVariantImg: { 0: 'internet'; 1: 'clock'; 2: 'folks'; 3: 'bag' } = {
   3: 'bag',
 };
 
-const CardBenefit = ({ id, title, text, btn }: ICardBenefit) => {
+const CardBenefit = ({ id, title, text, btn,href }: ICardBenefit) => {
   const [width] = useWindowSize();
 
   return (
@@ -37,7 +38,7 @@ const CardBenefit = ({ id, title, text, btn }: ICardBenefit) => {
       </div>
 
       <Text variant='text3'>{text}</Text>
-      <Link variant='benefit' href=''>
+      <Link variant='benefit' href={href}>
         {btn} <MdOutlineArrowForwardIos />
       </Link>
     </LiStyled>

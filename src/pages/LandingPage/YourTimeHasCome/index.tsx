@@ -66,7 +66,7 @@ const YourTimeHasCome = ({ innerRef, id }: IPages) => {
               A sua hora chegou!
             </Title>
           </div>
-          <Title tag='h3' variant='title3' className='general_clinic_title'>
+          <Title tag='h3' variant='title3' className='general_title'>
             Vamos Cuidar da sua Saúde Bucal
           </Title>
           <Text variant='text2' data-aos='fade-left'>

@@ -2,56 +2,45 @@ import Link from '../../../components/common/Link';
 import Title from '../../../components/common/Title';
 import { FooterStyled, Logo } from './style';
 import CompanyLogo from '../../../assets/svg/agendaConsultaLogo.svg';
-import { RefObject } from 'react';
 import { IPages } from '..';
+import { address, footer_services } from '../../../components-mock.json';
 
 const Footer = ({ innerRef, id }: IPages) => {
+  const { cep, city, company, number_room_neighborhood, phone, street } =
+    address;
+
   return (
     <FooterStyled ref={innerRef} id={id}>
       <div className='content'>
         <section className='services'>
-          <h3>Serviços</h3>
+          <Title tag='h3' variant='title6' animation={false}>
+            Serviços
+          </Title>
           <ul>
-            <li>Clínica Geral</li>
-            <li>Implante dentário</li>
-            <li>Prótese dentária</li>
-            <li>Clareamento</li>
-            <li>Harmonização</li>
-            <li>Aparelho Dental</li>
-            <li>Alinhadores Invisíveis</li>
-            <li>Botox</li>
-            <li>Extração</li>
-            <li>Limpeza Dentária</li>
+            {footer_services.map((name, id) => (
+              <li key={id + name} className='text'>
+                {name}
+              </li>
+            ))}
           </ul>
         </section>
         <section className='howArrive'>
-          <h3>Como Chegar</h3>
+          <Title tag='h3' variant='title6' animation={false}>
+            Como Chegar
+          </Title>
           <ul>
-            <li>Rua Godolfredo Gonçalves</li>
-            <li>Cep: 35681-047</li>
-            <li>375 - Sala 01 - Centro</li>
-            <li>(37) 99119-7849</li>
-            <li>Itaúna - MG</li>
-            <li>agendaconsulta.com</li>
+            <li className='text'>{street}</li>
+            <li className='text'>{cep}</li>
+            <li className='text'>{number_room_neighborhood}</li>
+            <li className='text'>{phone}</li>
+            <li className='text'>{city}</li>
+            <li className='text'>{company}</li>
           </ul>
           <Link href='' variant='primary'>
             Agendar Agora
           </Link>
-          <p>Resp. Tec: Thiago Mendes - CRO/MG - 77798</p>
+          <p className='text'>Resp. Tec: Thiago Mendes - CRO/MG - 77798</p>
         </section>
-        {/* <section className='additional_text'>
-          <div>
-            <img src={CompanyLogo} alt='Company Logo' />
-            <Title variant='logo' tag='h1'>
-              Agenda
-              <span>Consulta</span>
-            </Title>
-          </div>
-          <p>
-            Proporcionamos a melhor experiência odontológica aliada a um
-            atendimento humanizado.
-          </p>
-        </section> */}
       </div>
       <section className='all_rights_reserved'>
         <Logo>
@@ -61,7 +50,7 @@ const Footer = ({ innerRef, id }: IPages) => {
             <span>Consulta</span>
           </Title>
         </Logo>
-        <p>desenvolvido por © Agenda Consulta 2022 all rights reserved</p>
+        <p className='text'>desenvolvido por © Agenda Consulta 2022 all rights reserved</p>
       </section>
     </FooterStyled>
   );

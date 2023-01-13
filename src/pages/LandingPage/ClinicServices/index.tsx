@@ -5,15 +5,12 @@ import useWindowSize from '../../../hooks/useWindowSize';
 import CardService from './CardService';
 import { GridHeader, SectionStyled } from './style';
 import { services } from '../../../components-mock.json';
-import { RefObject } from 'react';
+import { IPages } from '..';
 
 const ClinicService = ({
   innerRef,
   id,
-}: {
-  id: string;
-  innerRef: RefObject<HTMLElement>;
-}) => {
+}: IPages) => {
   const [width] = useWindowSize();
 
   return (
@@ -25,7 +22,7 @@ const ClinicService = ({
               Clínica Geral
             </Title>
           </div>
-          <Title tag='h3' variant='title3' className='general_clinic_title'>
+          <Title tag='h3' variant='title3' className='general_title'>
             Veja os nossos tratamentos
           </Title>
           <Text variant='text2' data-aos='fade-left'>

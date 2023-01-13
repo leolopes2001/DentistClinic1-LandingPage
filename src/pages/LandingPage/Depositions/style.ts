@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import convertToRem from '../../../utils/convertToRem';
 
 export const StyledSection = styled.section`
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
+
   background-color: ${({ theme }) => theme.colors.background};
-  & > .content {
+  > .content {
     @media (min-width: 1000px) {
       display: flex;
       flex-direction: row-reverse;
@@ -25,17 +25,17 @@ export const GridHeader = styled.div`
   padding: 1rem;
 
   p {
-    max-width: 222px;
+    max-width: ${convertToRem(222)};
+  }
+
+  > .general_title {
+    margin-top: 1rem;
   }
 
   @media (min-width: 300px) {
     P {
-      max-width: 262px;
+      max-width: ${convertToRem(262)};
     }
-  }
-
-  & > .general_clinic_title {
-    margin-top: 1rem;
   }
 
   @media (max-width: 1000px) {
@@ -44,7 +44,7 @@ export const GridHeader = styled.div`
 
   @media (min-width: 1200px) {
     p {
-      max-width: 600px;
+      max-width: ${convertToRem(600)};
     }
   }
 `;

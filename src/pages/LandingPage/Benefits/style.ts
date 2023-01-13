@@ -10,27 +10,34 @@ export const GridHeader = styled.div`
   padding: 1rem;
 
   p {
-    max-width: 210px;
-    min-width: 210px;
+    max-width: ${convertToRem(210)};
+    min-width: ${convertToRem(210)};
+  }
+
+  & > .general_title {
+    margin-top: 1rem;
+    max-width: ${convertToRem(200)};
   }
 
   @media (min-width: 310px) {
     p {
-      min-width: 260px;
-      max-width: 260px;
+      min-width: ${convertToRem(260)};
+      max-width: ${convertToRem(260)};
+    }
+  }
+
+  @media (min-width: 370px) {
+    & > .general_title {
+      max-width: ${convertToRem(400)};
     }
   }
 
   @media (min-width: 450px) {
-    & > .general_clinic_title {
-      min-width: 400px;
+    & > .general_title {
+      min-width: ${convertToRem(400)};
       display: flex;
       justify-content: flex-start;
     }
-  }
-
-  & > .general_clinic_title {
-    margin-top: 1rem;
   }
 
   @media (min-width: 1200px) {
@@ -39,8 +46,7 @@ export const GridHeader = styled.div`
     grid-template-rows: 20px 90px;
     gap: 3rem;
 
-
-    .general_clinic_title {
+    .general_title {
       grid-template-columns: 1/2;
       grid-column: 1/2;
       grid-row: 1/3;
@@ -50,16 +56,15 @@ export const GridHeader = styled.div`
     }
 
     p {
-      min-width: 400px;
-    
+      min-width: ${convertToRem(400)};
     }
   }
 `;
 
 export const SectionStyled = styled.section`
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
   background-color: ${({ theme }) => theme.colors.background};
+
   .list_servies {
     display: flex;
     width: 100%;
