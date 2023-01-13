@@ -9,11 +9,10 @@ import ImageSlide3 from '../../../assets/svg/slider/img3.webp';
 const VideoSlider = () => {
   const settings: SliderProps = {
     spaceBetween: 40,
-    slidesPerView: 1.5,
+    slidesPerView: "auto",
     slidesPerGroup: 1,
     initialSlide: 2,
     draggable: true,
-    
     loop: true,
     
   };

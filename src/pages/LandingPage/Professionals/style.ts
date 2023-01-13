@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import convertToRem from '../../../utils/convertToRem';
 
 export const StyledSection = styled.section`
-padding-top: 2rem;
+  padding-top: 2rem;
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: ${({ theme }) => theme.colors.background};
@@ -53,9 +53,18 @@ padding-top: 2rem;
         }
       }
     }
+
+    .style_length_1 {
+      justify-content: center;
+    }
+    .style_length_2 {
+      justify-content: space-evenly;
+    }
+    
+    
   }
 
-  @media (min-width: 1200px){
+  @media (min-width: 1200px) {
     margin-bottom: 2rem;
   }
 `;
@@ -95,7 +104,7 @@ export const GridHeader = styled.div`
     margin-top: ${convertToRem(43)};
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 100px 100px;
-   
+
     .general_clinic_title {
       width: 100%;
       margin-top: 0;

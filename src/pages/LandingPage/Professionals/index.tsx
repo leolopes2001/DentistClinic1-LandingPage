@@ -38,7 +38,9 @@ const Professionals = ({ innerRef, id }: IPages) => {
         </GridHeader>
 
         {width > 1200 ? (
-          <ul className='doctors_list'>
+          <ul
+            className={`doctors_list style_length_${doctors_cards_slider.length}`}
+          >
             {doctors_cards_slider.map((doctor) => (
               <li key={doctor.id}>
                 <img

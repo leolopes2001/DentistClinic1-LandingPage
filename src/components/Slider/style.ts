@@ -109,18 +109,55 @@ const SliderWrapVariant = {
     .swiper {
       width: 100%;
       display: flex;
+      align-items: end;
+      justify-content: end;
+
+      padding-left: 5rem;
+
+    
+    }
+
+    .swiper-slide {
+      min-width: 250px;
+      max-width: 250px;
+      margin-right: 3rem;
+    }
+
+    /* ********************** */
+    /* position: relative;
+    max-width: 600px;
+    left: -2rem;
+
+    .video_card {
+      min-width: 220px;
+      height: 400px;
+      background-color: black;
+      border-radius: 2rem;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+      }
+    }
+
+    .swiper {
+      width: 100%;
+      display: flex;
       align-items: center;
       justify-content: center;
 
       padding-left: -5rem;
 
-      -webkit-transform: scaleX(-1) translateX(-1rem);
-      transform: scaleX(-1) translateX(-1rem);
+       -webkit-transform: scaleX(-1) translateX(-1rem);
+      transform: scaleX(-1) translateX(-1rem); 
     }
 
     .swiper-slide {
       min-width: 220px;
     }
+    */
   `,
 
   type4: css`
@@ -129,10 +166,9 @@ const SliderWrapVariant = {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 90%;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
-        
     }
 
     .swiper-slide {
@@ -144,7 +180,7 @@ const SliderWrapVariant = {
       & > div {
         min-height: 100%;
         max-width: 260px;
-        min-width: 260px;
+        min-width: 235px;
         img {
           width: 100%;
           height: 100%;
@@ -169,25 +205,23 @@ const SliderWrapVariant = {
     position: relative;
 
     .swiper {
-      
       max-height: 265px;
       min-height: 265px;
-      
-      
+
       width: 100%;
       margin-left: auto;
       margin-right: auto;
       display: flex;
       align-items: center;
-      
+
       margin-top: 1rem;
-      
+
       margin-top: 0;
       margin-bottom: 1rem;
       padding-bottom: 4rem;
       justify-content: center;
       padding: 0 1rem;
-      
+
       @media (min-width: 900px) {
         min-height: 290px;
         min-height: 390px;
@@ -211,8 +245,6 @@ const SliderWrapVariant = {
         height: 203px;
         border-radius: 20px;
         padding: 1rem;
-
-
 
         display: flex;
         flex-direction: column;
