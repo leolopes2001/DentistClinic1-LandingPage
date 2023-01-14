@@ -1,9 +1,10 @@
 import Link from '../../../components/common/Link';
 import Title from '../../../components/common/Title';
-import { FooterStyled, Logo } from './style';
-import CompanyLogo from '../../../assets/svg/agendaConsultaLogo.svg';
+import { FooterStyled } from './style';
 import { IPages } from '..';
 import { address, footer_services } from '../../../components-mock.json';
+import { IoLogoWhatsapp } from 'react-icons/io';
+import Logo from '../../../components/Logo';
 
 const Footer = ({ innerRef, id }: IPages) => {
   const { cep, city, company, number_room_neighborhood, phone, street } =
@@ -32,7 +33,9 @@ const Footer = ({ innerRef, id }: IPages) => {
             <li className='text'>{street}</li>
             <li className='text'>{cep}</li>
             <li className='text'>{number_room_neighborhood}</li>
-            <li className='text'>{phone}</li>
+            <li className='text wpp'>
+              {phone} <IoLogoWhatsapp />
+            </li>
             <li className='text'>{city}</li>
             <li className='text'>{company}</li>
           </ul>
@@ -43,14 +46,10 @@ const Footer = ({ innerRef, id }: IPages) => {
         </section>
       </div>
       <section className='all_rights_reserved'>
-        <Logo>
-          <img src={CompanyLogo} alt='Company Logo' />
-          <Title variant='logo' tag='h1'>
-            Agenda
-            <span>Consulta</span>
-          </Title>
-        </Logo>
-        <p className='text'>desenvolvido por © Agenda Consulta 2022 all rights reserved</p>
+        <Logo animation={false}/>
+        <p className='text'>
+          desenvolvido por © Agenda Consulta 2022 all rights reserved
+        </p>
       </section>
     </FooterStyled>
   );

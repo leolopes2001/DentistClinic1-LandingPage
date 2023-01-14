@@ -6,31 +6,19 @@ import CircleIconPlus from '../../../components/CircleIconPlus';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import HumanImage from './HumanImage';
 import Title from '../../../components/common/Title';
-import { Logo } from '../Header/style';
+
 import CompanyLogo from '../../../assets/svg/agendaConsultaLogo.svg';
 import useWindowSize from '../../../hooks/useWindowSize';
 import { IPages } from '..';
-
-import bag from '../../../assets/svg/desktop/bag.svg';
+import { clinic_name, clinic_surname } from '../../../components-mock.json';
+import Logo from '../../../components/Logo';
 
 const Home = ({ innerRef, id }: IPages) => {
   const [width] = useWindowSize();
   return (
     <HomeStyled ref={innerRef} id={id}>
       <Container className='content'>
-        {width > 1200 && (
-          <Logo data-aos='fade-right' style={{ paddingTop: '4rem' }}>
-            <img
-              src={CompanyLogo}
-              alt='Company Logo'
-              style={{ width: '45px' }}
-            />
-            <Title variant='logo' tag='h1'>
-              Agenda
-              <span>Consulta</span>
-            </Title>
-          </Logo>
-        )}
+        {width > 1200 && <Logo isHome={true} style={{ paddingTop: '4rem' }} />}
         <Title variant='title1' tag='h3' data-aos='fade-right'>
           Faça um checkup odontológico hoje
         </Title>
@@ -46,7 +34,7 @@ const Home = ({ innerRef, id }: IPages) => {
           icon='tooth'
           size='mobile'
           label='Dennics'
-          text2='Dental Care Clinic'
+          text2='Clínica Odontológica'
           className='icon-one'
         />
         <CircleIcon
@@ -65,7 +53,7 @@ const Home = ({ innerRef, id }: IPages) => {
         />
         <AsideDiv>
           <CircleIcon icon='toothCareRemoved' size='mobile' />
-          <CircleIcon icon='clock' size='mobile' />
+          <CircleIcon icon='toothCare' size='mobile' />
         </AsideDiv>
         <HumanImage />
       </Container>

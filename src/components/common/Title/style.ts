@@ -5,121 +5,112 @@ import MaskTitle from './maskTitle';
 const TitleVariant = {
   logo: css`
     font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: ${convertToRem(18)};
+    line-height: ${convertToRem(21)};
     text-transform: capitalize;
-    color: #373f43;
+    margin-left: 0.2rem;
+    color: ${({ theme }) => theme.colors.grey2};
 
     > span {
       color: ${({ theme }) => theme.colors.primary};
     }
 
     @media (min-width: 1200px) {
-      margin-left: 1rem;
-      font-size: 28px;
+      margin-left: 0.4rem;
+      font-size: ${convertToRem(28)};
     }
   `,
 
   title1: css`
-    width: 289px;
+    width: ${convertToRem(289)};
     position: relative;
     margin-bottom: ${convertToRem(12)};
     z-index: 999;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 46px;
-    color: #2e3538;
+    font-size: ${convertToRem(32)};
+    line-height: ${convertToRem(46)};
+    color: ${({ theme }) => theme.colors.grey0};
 
     @media (min-width: 1200px) {
-      font-weight: 700;
-      font-size: 58px;
+      font-size: ${convertToRem(58)};
       margin-top: 1rem;
-      line-height: 80px;
-      color: #2e3538;
-      width: 688px;
+      line-height: ${convertToRem(80)};
+      width: ${convertToRem(688)};
     }
   `,
 
   title2: css`
     font-family: 'Red Hat Display';
-    font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 19px;
-    color: #373f43;
+    font-size: ${convertToRem(14)};
+    line-height: ${convertToRem(19)};
+    color: ${({ theme }) => theme.colors.grey2};
     @media (min-width: 1200px) {
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 32px;
+      font-size: ${convertToRem(24)};
+      line-height: ${convertToRem(32)};
     }
   `,
 
   title3: css`
     font-weight: 700;
-    font-size: 28px;
-    line-height: 40px;
-    color: #373f43;
+    font-size: ${convertToRem(28)};
+    line-height: ${convertToRem(40)};
+    color: ${({ theme }) => theme.colors.grey2};
 
     @media (min-width: 1200px) {
-      font-weight: 700;
-      font-size: 56px;
-      line-height: 72px;
+      font-size: ${convertToRem(56)};
+      line-height: ${convertToRem(72)};
     }
   `,
 
   title4: css`
-    width: 77px;
-    height: 16px;
-    left: 35px;
-    top: 926px;
+    width: ${convertToRem(77)};
+    height: ${convertToRem(16)};
     font-weight: 700;
-    font-size: 12px;
-    line-height: 16px;
-    color: #373f43;
+    font-size: ${convertToRem(12)};
+    line-height: ${convertToRem(16)};
+    color: ${({ theme }) => theme.colors.grey2};
 
     @media (min-width: 1200px) {
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 32px;
-      width: 272px;
+      font-size: ${convertToRem(24)};
+      line-height: ${convertToRem(32)};
+      width: ${convertToRem(272)};
     }
   `,
 
   title5: css`
     font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #373f43;
+    font-size: ${convertToRem(16)};
+    line-height: ${convertToRem(21)};
+    color: ${({ theme }) => theme.colors.grey2};
 
     @media (min-width: 900px) {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 26px;
-      color: #373f43;
+      font-size: ${convertToRem(20)};
+      line-height: ${convertToRem(26)};
     }
   `,
 
   title6: css`
     font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: #49545a;
+    font-size: ${convertToRem(18)};
+    line-height: ${convertToRem(24)};
+    color: ${({ theme }) => theme.colors.grey5};
 
     @media (min-width: 1200px) {
-      font-size: 28px;
-      line-height: 37px;
+      font-size: ${convertToRem(28)};
+      line-height: ${convertToRem(37)};
     }
   `,
 
   numberCompany: css`
-    font-style: normal;
+  
     font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: ${convertToRem(20)};
+    line-height: ${convertToRem(26)};
     text-align: center;
-    min-width: 340px;
-    max-width: 340px;
-    color: #49545a;
+    min-width: ${convertToRem(340)};
+    max-width: ${convertToRem(340)};
+    color: ${({ theme }) => theme.colors.grey5};
   `,
 };
 
@@ -130,31 +121,31 @@ export const Wrapper = styled.div`
   }
 
   .circle {
-    width: 8px;
-    height: 8px;
+    width: ${convertToRem(8)};
+    height: ${convertToRem(8)};
     border-radius: 50%;
     background-color: ${({ theme }) => theme.colors.primary};
-    margin-right: 8px;
+    margin-right: ${convertToRem(8)};
   }
 
   > .line {
-    min-width: 240px;
+    min-width: ${convertToRem(240)};
     width: 60%;
-    max-width: 240px;
-    margin-top: 10px;
-    height: 1px;
+    max-width: ${convertToRem(240)};
+    margin-top: ${convertToRem(10)};
+    height: ${convertToRem(1)};
     background-color: ${({ theme }) => theme.colors.primary};
 
     @media (min-width: 600px) {
-      min-width: 250px;
+      min-width: ${convertToRem(250)};
       width: 50%;
-      max-width: 250px;
+      max-width: ${convertToRem(250)};
     }
 
     @media (min-width: 1200px) {
-      min-width: 300px;
+      min-width: ${convertToRem(300)};
       width: 65%;
-      max-width: 600px;
+      max-width: ${convertToRem(600)};
     }
   }
 `;

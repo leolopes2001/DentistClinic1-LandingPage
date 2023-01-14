@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import convertToRem from '../../utils/convertToRem';
 import { ButtonStyled } from '../common/Button/style';
 
 export const MobileMenuStyled = styled(ButtonStyled)<{
@@ -7,15 +8,15 @@ export const MobileMenuStyled = styled(ButtonStyled)<{
   display: inline-block;
  
   .line-menu {
-    width: 32px;
-    height: 2px;
-    margin: 8px;
-    transition: 0.3s;
-    background-color: black;
+    width: ${convertToRem(32)};
+    height: ${convertToRem(2)};
+    margin: ${convertToRem(8)};
+    transition: all 300ms;
+    background-color: ${({theme}) => theme.colors.blackFixed};
   }
 
   &:hover > .line-menu {
-    background-color: red;
+    background-color: ${({theme}) => theme.colors.primary};
   }
 
   ${({ isSideBarOpen }) =>

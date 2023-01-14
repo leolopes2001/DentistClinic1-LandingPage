@@ -13,8 +13,9 @@ export default {
 
     background: '#FDFDFD',
     background2: '#F5FFFD',
+    background3: '#f5f5f5',
 
     whiteFixed: '#fff',
-    blackFixed: '#00000',
+    blackFixed: '#000',
   },
 } as const;

@@ -1,12 +1,9 @@
 import { Slide, Slider, SliderProps } from '..';
-
 import ImageSlide1 from '../../../assets/svg/slider/img1.png';
 import ImageSlide2 from '../../../assets/svg/slider/img2.png';
 import ImageSlide3 from '../../../assets/svg/slider/img3.webp';
-import CircleIcon from '../../CircleIcon';
 import Link from '../../common/Link';
-import PlayDesktop from '../../../assets/svg/desktop/play.svg';
-import PlayMobile from '../../../assets/svg/mobile/play.svg';
+
 
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 import { AiFillPlayCircle } from 'react-icons/ai';

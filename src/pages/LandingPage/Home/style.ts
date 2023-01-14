@@ -76,8 +76,8 @@ export const Container = styled.div`
     justify-content: space-between;
 
     @media (min-width: 1200px) {
-      width: 198px;
-      height: 100px;
+      width: ${convertToRem(198)};
+      height: ${convertToRem(100)};
       top: 80%;
       left: 30%;
       p {

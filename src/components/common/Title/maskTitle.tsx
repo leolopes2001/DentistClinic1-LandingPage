@@ -1,6 +1,4 @@
-import { ReactNode } from 'react';
 import { IBaseTitleProps } from '.';
-
 
 const MaskTitle = ({ tag, className, children, ...rest }: IBaseTitleProps) => (
   <>

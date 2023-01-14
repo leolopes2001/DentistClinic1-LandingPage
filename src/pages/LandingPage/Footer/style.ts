@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import convertToRem from '../../../utils/convertToRem';
 
 export const FooterStyled = styled.footer`
-  background: #f5f5f5;
+  background-color: ${({ theme }) => theme.colors.background3};
   overflow-x: hidden;
 
   .text {
@@ -11,17 +11,37 @@ export const FooterStyled = styled.footer`
     font-weight: 400;
     font-size: ${convertToRem(12)};
     line-height: ${convertToRem(14)};
-    color: #373f43;
-
+    color: ${({ theme }) => theme.colors.grey2};
+    min-height: 19px;
     @media (min-width: 1200px) {
       font-size: ${convertToRem(20)};
       line-height: ${convertToRem(23)};
     }
   }
 
+  .wpp {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    svg {
+      font-size: 1.2rem;
+      color: rgb(85, 205, 108);
+    }
+
+    @media (min-width: 1200px) {
+      position: relative;
+      svg {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.9rem;
+        right: 45px;
+      }
+    }
+  }
   .services ul {
     display: flex;
-    gap: ${convertToRem(20)};
+    gap: ${convertToRem(18)};
     flex-direction: column;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -34,7 +54,7 @@ export const FooterStyled = styled.footer`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: ${convertToRem(20)};
+    gap: ${convertToRem(18)};
     margin: 2rem 0;
     width: 100%;
     max-width: ${convertToRem(700)};
@@ -93,6 +113,3 @@ export const FooterStyled = styled.footer`
   }
 `;
 
-export const Logo = styled.div`
-  display: flex;
-`;

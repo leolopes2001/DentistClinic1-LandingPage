@@ -31,7 +31,7 @@ const LinkVariant = {
       color: ${({ theme }) => theme.colors.whiteFixed};
     }
     svg {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
     border-radius: ${convertToRem(4)};
   `,
@@ -44,14 +44,14 @@ const LinkVariant = {
   clinicService: css`
     transition: all 600ms !important;
     padding: 8px 16px;
-    width: 112px;
-    height: 29px;
-    border: 1px solid #de0d1d;
-    border-radius: 26px;
+    width: ${convertToRem(112)};
+    height: ${convertToRem(29)};
+    border: 1px solid ${({ theme }) => theme.colors.primary};
+    border-radius: ${convertToRem(26)};
     font-weight: 400;
-    font-size: 10px;
-    line-height: 13px;
-    color: #de0d1d;
+    font-size: ${convertToRem(10)};
+    line-height: ${convertToRem(13)};
+    color: ${({ theme }) => theme.colors.primary};
     gap: 0.4rem;
 
     &:hover {
@@ -60,51 +60,51 @@ const LinkVariant = {
     }
 
     @media (min-width: 1200px) {
-      width: 182px;
-      height: 48px;
-      font-size: 16px;
-      line-height: 24px;
+      width: ${convertToRem(182)};
+      height: ${convertToRem(48)};
+      font-size: ${convertToRem(16)};
+      line-height: ${convertToRem(24)};
     }
   `,
   benefit: css`
     transition: all 600ms !important;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: ${convertToRem(18)};
+    line-height: ${convertToRem(24)};
     color: ${({ theme }) => theme.colors.primary};
 
     @media (max-width: 1200px) {
-      font-size: 12px;
-      line-height: 16px;
+      font-size: ${convertToRem(12)};
+      line-height: ${convertToRem(16)};
     }
   `,
 
   youtube: css`
     font-family: 'Poppins';
-    font-style: normal;
     inset: 0;
     padding: 8px 16px;
-    gap: 8px;
+    gap: ${convertToRem(8)};
     position: absolute;
-    width: 179px;
-    height: 40px;
-    background: #fdfdfd;
-    border-radius: 41px;
+    width: ${convertToRem(179)};
+    height: ${convertToRem(40)};
+    background: ${({theme}) => theme.colors.background};
+    border-radius: ${convertToRem(41)};
     font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    color: #373f43;
+    font-size: ${convertToRem(12)};
+    line-height: ${convertToRem(18)};
+    color: ${({theme}) => theme.colors.grey2};
     top: 86%;
     left: 50%;
     transform: translate(-50%);
     transition: all 400ms;
 
     > svg:nth-child(1) {
-      width: 25px;
-      height: 25px;
+      width: ${convertToRem(25)};
+      height: ${convertToRem(25)};
       color: ${({ theme }) => theme.colors.primary};
       position: relative;
       z-index: 9999;
+      
     }
 
     &:hover {
@@ -117,13 +117,13 @@ const LinkVariant = {
     }
 
     @media (min-width: 1200px) {
-      width: 250px;
-      height: 54px;
+      width: ${convertToRem(250)};
+      height: ${convertToRem(54)};
       font-weight: 500;
-      font-size: 20px;
-      line-height: 30px;
+      font-size: ${convertToRem(20)};
+      line-height: ${convertToRem(30)};
       top: 83%;
-      color: #373f43;
+      color: ${({theme}) => theme.colors.grey2};
     }
   `,
 };

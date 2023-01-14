@@ -7,7 +7,7 @@ export const ButtonStyled = styled.button`
   border: none;
   cursor: pointer;
   font-style: normal;
-  transition: 0.3s;
+  transition: all 300ms;
   background-color: transparent;
   border-radius: 4px;
 

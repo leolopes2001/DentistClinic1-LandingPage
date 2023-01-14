@@ -8,16 +8,16 @@ export const StyledSection = styled.section`
 
   .general_title {
     width: 100%;
-    max-width: 300px;
+    max-width: ${convertToRem(300)};
   }
   @media (min-width: 320px) {
     .general_title {
-      max-width: 320px;
+      max-width: ${convertToRem(320)};
     }
   }
   @media (min-width: 450px) {
     .general_title {
-      max-width: 340px;
+      max-width: ${convertToRem(340)};
     }
   }
 
@@ -65,7 +65,7 @@ export const GridHeader = styled.div`
 
   @media (min-width: 1200px) {
     .general_title {
-      min-width: 650px;
+      min-width: ${convertToRem(650)};
     }
     p {
       max-width: ${convertToRem(600)};

@@ -15,7 +15,7 @@ export const GridHeader = styled.div`
     margin-top: 1rem;
     display: flex;
     justify-content: flex-start;
-    max-width: 350px;
+    max-width: ${convertToRem(350)};
   }
 
   > p {

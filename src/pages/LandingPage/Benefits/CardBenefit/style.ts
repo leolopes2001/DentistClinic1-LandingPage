@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import convertToRem from '../../../../utils/convertToRem';
 
 export const LiStyled = styled.li`
   display: flex;
@@ -25,7 +26,7 @@ export const LiStyled = styled.li`
     h4 {
       align-items: flex-start;
       justify-content: flex-start;
-      width: 302px;
+      width: ${convertToRem(302)};
       margin-top: 2rem;
     }
   }
@@ -41,10 +42,10 @@ export const LiStyled = styled.li`
     > p {
       text-align: center;
 
-      margin-top: 4px;
+      margin-top: ${convertToRem(4)};
 
-      width: 119px;
-      height: 32px;
+      width: ${convertToRem(119)};
+      height: ${convertToRem(32)};
     }
 
     justify-content: center;
@@ -61,7 +62,7 @@ export const LiStyled = styled.li`
       h4 {
         align-items: center;
         justify-content: center;
-        width: 302px;
+        width: ${convertToRem(302)};
         margin-top: 0rem;
       }
     }
@@ -70,13 +71,13 @@ export const LiStyled = styled.li`
   @media (max-width: 324px) {
     > p {
       text-align: center;
-      min-height: 28px;
+      min-height: ${convertToRem(28)};
     }
   }
 
   @media (min-width: 1200px) {
-    width: 242px;
-    height: 300px;
+    width: ${convertToRem(242)};
+    height: ${convertToRem(300)};
     justify-content: space-evenly;
   }
 `;

@@ -4,6 +4,7 @@ import { Text } from '../../../components/common/Text/style';
 import Link from '../../../components/common/Link';
 import VideoSlider from '../../../components/Slider/VideoSlider';
 import { IPages } from '..';
+import { MdOutlineArrowForwardIos } from 'react-icons/md';
 
 const Depositions = ({ innerRef }: IPages) => (
   <StyledSection ref={innerRef}>
@@ -23,7 +24,7 @@ const Depositions = ({ innerRef }: IPages) => (
           história.
         </Text>
         <Link href='' variant='primary'>
-          Nosso YouTube
+          Nosso YouTube <MdOutlineArrowForwardIos />
         </Link>
       </GridHeader>
 

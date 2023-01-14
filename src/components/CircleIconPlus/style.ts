@@ -120,8 +120,8 @@ const ContainerVariantMobile = {
 const ContainerVariantDesktop = {
   one: css`
     position: absolute;
-    width: 76.21px;
-    height: 69.83px;
+    width: ${convertToRem(76.21)};
+    height: ${convertToRem(69.83)};
 
     .content_box {
       display: flex;
@@ -135,12 +135,12 @@ const ContainerVariantDesktop = {
   `,
   two: css`
     font-family: 'Inter';
-    font-style: normal;
+ 
     position: absolute;
-    width: 108.5px;
-    height: 49.57px;
-    background: #ffffff;
-    border-radius: 10.3439px;
+    width: ${convertToRem(108.5)};
+    height: ${convertToRem(49.57)};
+    background: ${({ theme }) => theme.colors.whiteFixed};
+    border-radius: ${convertToRem(10.34)};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,26 +157,26 @@ const ContainerVariantDesktop = {
 
     .content_box .text {
       font-weight: 500;
-      font-size: 18px;
-      line-height: 22px;
-      color: #3d3d3d;
-      width: 100px;
+      font-size: ${convertToRem(18)};
+      line-height: ${convertToRem(22)};
+      color: ${({ theme }) => theme.colors.grey4};
+      width: ${convertToRem(100)};
     }
 
     .content_box .label {
       font-weight: 700;
-      font-size: 42px;
-      line-height: 41px;
-      color: #000000;
+      font-size: ${convertToRem(42)};
+      line-height: ${convertToRem(41)};
+      color: ${({ theme }) => theme.colors.blackFixed};
     }
   `,
   three: css`
     position: absolute;
-    width: 79.21px;
-    height: 72.83px;
-    background: #ffffff;
-    border-radius: 10.3439px;
-    
+    width: ${convertToRem(79.21)};
+    height: ${convertToRem(72.83)};
+    background: ${({ theme }) => theme.colors.whiteFixed};
+    border-radius: ${convertToRem(10.34)};
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,25 +188,23 @@ const ContainerVariantDesktop = {
       align-items: center;
       justify-content: center;
       padding-bottom: 0.4rem;
-
     }
 
     .text {
       font-weight: 400;
-      font-size: 7.75791px;
-      line-height: 10px;
+      font-size: ${convertToRem(7.75)};
+      line-height: ${convertToRem(10)};
       text-align: center;
-      color: #49545a;
+      color: ${({theme}) => theme.colors.grey5};
       width: 50px;
-      
     }
 
     .label {
       font-weight: 500;
-      font-size: 7.75791px;
-      line-height: 10px;
+      font-size: ${convertToRem(7.75)};
+      line-height: ${convertToRem(10)};
       text-align: center;
-      color: #373f43;
+      color: ${({theme}) => theme.colors.grey2};
     }
   `,
 };

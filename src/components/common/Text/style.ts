@@ -11,63 +11,54 @@ interface ILabelVariant {
 export const TextVariant = {
   text1: css`
     font-family: 'Red Hat Display';
-    font-style: normal;
-    width: 262px;
+    width: ${convertToRem(262)};
     font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
-    color: #373f43;
+    font-size: ${convertToRem(12)};
+    line-height: ${convertToRem(20)};
+    color: ${({ theme }) => theme.colors.grey2};
     position: relative;
     z-index: 999;
 
     @media (min-width: 1200px) {
-      width: 449px;
-      height: 96px;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 32px;
-      color: #373f43;
+      width: ${convertToRem(449)};
+      height: ${convertToRem(96)};
+      font-size: ${convertToRem(20)};
+      line-height: ${convertToRem(32)};
     }
   `,
 
   text2: css`
     font-family: 'Red Hat Display';
-    font-style: normal;
-
     width: 100%;
     font-weight: 400;
-    font-size: 12px;
+    font-size: ${convertToRem(12)};
     height: auto;
-    line-height: 20px;
-    color: #49545a;
+    line-height: ${convertToRem(20)};
+    color: ${({ theme }) => theme.colors.grey5};
     text-align: justify;
     display: inline-flex;
 
     @media (min-width: 1200px) {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 32px;
-      color: #49545a;
+      font-size: ${convertToRem(20)};
+      line-height: ${convertToRem(32)};
+
       display: flex;
       align-items: flex-end;
     }
   `,
 
   text3: css`
-    width: 144px;
-    left: 35px;
-    top: 952px;
+    width: ${convertToRem(144)};
     font-weight: 400;
-    font-size: 10px;
-    line-height: 16px;
-    color: #49545a;
+    font-size: ${convertToRem(10)};
+    line-height: ${convertToRem(16)};
+    color: ${({ theme }) => theme.colors.grey5};
 
     @media (min-width: 1200px) {
-      width: 332px;
-      height: 56px;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 28px;
+      width: ${convertToRem(332)};
+      height: ${convertToRem(56)};
+      font-size: ${convertToRem(18)};
+      line-height: ${convertToRem(28)};
     }
   `,
 
@@ -96,14 +87,13 @@ export const Text = styled.p<ITextVariant>`
 const LabelVariant = {
   label1: css`
     font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #606f76;
+    font-size: ${convertToRem(12)};
+    line-height: ${convertToRem(14)};
+    color: ${({ theme }) => theme.colors.grey6};
 
     @media (min-width: 900px) {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 21px;
+      font-size: ${convertToRem(18)};
+      line-height: ${convertToRem(21)};
     }
   `,
 };

@@ -2,10 +2,11 @@ import CompanyLogo from '../../../assets/svg/agendaConsultaLogo.svg';
 import Link from '../../../components/common/Link';
 import MobileMenu from '../../../components/MobileMenu';
 import useWindowSize from '../../../hooks/useWindowSize';
-import { HeaderStyled, Logo, NavStyled } from './style';
+import { HeaderStyled, NavStyled } from './style';
 import Phone from '../../../assets/svg/common/phone.svg';
 import Title from '../../../components/common/Title';
 import { navLiksData, address } from '../../../components-mock.json';
+import Logo from '../../../components/Logo';
 
 const Header = ({ sectionActive }: { sectionActive: string }) => {
   const [width] = useWindowSize();
@@ -34,13 +35,7 @@ const Header = ({ sectionActive }: { sectionActive: string }) => {
         </NavStyled>
       ) : (
         <>
-          <Logo>
-            <img src={CompanyLogo} alt='Company Logo' />
-            <Title variant='logo' tag='h1'>
-              Agenda
-              <span>Consulta</span>
-            </Title>
-          </Logo>
+          <Logo />
           <MobileMenu />
         </>
       )}

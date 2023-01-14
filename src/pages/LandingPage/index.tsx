@@ -20,10 +20,10 @@ export interface IPages {
 const LandingPage = () => {
   const { setSectionActiveSideBar } = useSideBar();
   const homeRef = useRef<HTMLElement>(null);
-  const clinicServiceRef = useRef<HTMLDivElement>(null);
-  const schedulesRef = useRef<HTMLDivElement>(null);
-  const dentistRef = useRef<HTMLDivElement>(null);
-  const footerRef = useRef<HTMLDivElement>(null);
+  const clinicServiceRef = useRef<HTMLElement>(null);
+  const schedulesRef = useRef<HTMLElement>(null);
+  const dentistRef = useRef<HTMLElement>(null);
+  const footerRef = useRef<HTMLElement>(null);
   const benefitsRef = useRef<HTMLElement>(null);
   const depositionsRef = useRef<HTMLElement>(null);
   const patientsRef = useRef<HTMLElement>(null);
@@ -39,6 +39,8 @@ const LandingPage = () => {
   };
 
   const handleObserver = (section: string, ratio: number) => {
+    
+    
     if (ratio < 0.59) return;
 
     setSectionActiveSideBar(section);
@@ -93,7 +95,7 @@ const LandingPage = () => {
     observerFooter.observe(footerRef?.current as HTMLElement);
     observerPatients.observe(patientsRef?.current as HTMLElement);
     observerBenefits.observe(benefitsRef?.current as HTMLElement);
-    observerDepositions.observe(patientsRef.current as HTMLElement);
+    observerDepositions.observe(depositionsRef?.current as HTMLElement);
   }, []);
 
   return (
@@ -101,9 +103,12 @@ const LandingPage = () => {
       <Header sectionActive={sectionActive} />
       <Home id='home' innerRef={homeRef} />
       <ClinicServices id='services' innerRef={clinicServiceRef} />
+
       <YourTimeHasCome id='schedules' innerRef={schedulesRef} />
+
       <Benefits innerRef={benefitsRef} />
       <Depositions innerRef={depositionsRef} />
+
       <Professionals id='dentists' innerRef={dentistRef} />
       <PatientSay innerRef={patientsRef} />
       <Footer id='footer' innerRef={footerRef} />

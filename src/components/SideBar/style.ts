@@ -1,4 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
+import convertToRem from '../../utils/convertToRem';
 
 const fade = keyframes`
   from{
@@ -40,9 +41,9 @@ export const SideBarStyled = styled.aside<{
 
     .active {
       font-weight: 800;
-      font-size: 20px;
-      line-height: 23px;
-      color: #49545a;
+      font-size: ${convertToRem(20)};
+      line-height: ${convertToRem(23)};
+      color: ${({theme}) => theme.colors.grey5};
     }
   }
   ${({ isSideBarOpen }) =>

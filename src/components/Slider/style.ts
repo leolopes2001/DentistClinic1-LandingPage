@@ -90,8 +90,6 @@ const SliderWrapVariant = {
     }
 
     .swiper {
-      display: flex;
-      align-items: center;
       justify-content: end;
       align-items: flex-end;
      

@@ -1,4 +1,7 @@
 {
+  "clinic_name": "Agenda",
+  "clinic_surname": "Consulta",
+  "company_logo_exists": true,
   "clinic_link": "https://agendaconsulta.com/",
   "services": [
     {
