@@ -13,6 +13,10 @@ export const HeaderStyled = styled.header`
   width: 100%;
   z-index: 99999;
 
+  .content{
+    padding: 0;
+  }
+
   @media (min-width: 1000px) {
     background-color: ${({ theme }) => theme.colors.background};
     padding: 0 1rem;
