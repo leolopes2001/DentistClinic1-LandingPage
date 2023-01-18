@@ -274,6 +274,7 @@ export const GridHeader = styled.div`
     padding: 0; 
     width: 162px;
     height: 48px;
+    border-radius: 16px;
     svg {
       transform: translateX(16px);
       margin-top: 1px;

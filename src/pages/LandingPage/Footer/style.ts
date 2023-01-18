@@ -97,8 +97,9 @@ export const FooterStyled = styled.footer`
       border-radius: 8px;
       margin: 0;
       margin-bottom: 2rem;
-
+      
       @media (min-width: 1200px) {
+        border-radius: 16px;
         width: 211px;
         height: 67px;
       }
