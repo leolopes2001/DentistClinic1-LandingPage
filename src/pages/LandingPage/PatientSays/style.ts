@@ -11,7 +11,7 @@ export const GridHeader = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 0.5 1fr 1fr;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0px;
 
   > .general_title {
     margin-top: 1rem;

@@ -26,7 +26,7 @@ export const GridHeader = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 0.5 1fr 1fr;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0px;
 
   display: flex;
   align-items: flex-start;
@@ -47,6 +47,7 @@ export const GridHeader = styled.div`
   }
 
   @media (min-width: 1200px) {
+    padding: 1rem;
     > ${BaseTitle} {
       margin: 1rem 0px 0px 0px;
       font-size: 45px;

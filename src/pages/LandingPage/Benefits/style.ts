@@ -9,7 +9,7 @@ export const GridHeader = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 0.5 1fr 1fr;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0px;
 
   & > ${BaseTitle} {
     margin-top: 1rem;
@@ -39,16 +39,10 @@ export const GridHeader = styled.div`
     }
   }
 
-  /* @media (min-width: 310px) {
-    p {
-      min-width: ${convertToRem(260)};
-      max-width: ${convertToRem(260)};
-    }
-  } */
-
   @media (min-width: 370px) {
     & > ${BaseTitle} {
-      max-width: ${convertToRem(400)};
+      justify-content: flex-start;
+      max-width: ${convertToRem(400)}; 
     }
   }
 

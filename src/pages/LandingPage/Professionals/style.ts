@@ -60,7 +60,7 @@ export const GridHeader = styled.div`
   grid-template-rows: 0.5 1fr 1fr;
   margin-top: ${convertToRem(13)};
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0px;
   & > .general_title {
     margin-top: 1rem;
     min-width: ${convertToRem(250)};
