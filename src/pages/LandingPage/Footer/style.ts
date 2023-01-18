@@ -28,9 +28,9 @@ export const FooterStyled = styled.footer`
   .services ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
-    max-width: ${convertToRem(700)};
+    max-width: 800px;
     gap: 32px;
 
     margin-top: 24px;
@@ -46,7 +46,8 @@ export const FooterStyled = styled.footer`
     gap: 20px;
     margin-top: 24px;
     margin-bottom: 27px;
-   
+    width: 100%;
+    max-width: 800px;
     li:nth-child(2) {
       grid-row: 2/3;
       
@@ -72,7 +73,7 @@ export const FooterStyled = styled.footer`
     align-items: flex-start;
     justify-content: flex-start;
     margin-top: 32px;
-
+    
     @media (min-width: 1200px) {
       margin: 0px;
     }
@@ -210,9 +211,6 @@ export const FooterStyled = styled.footer`
       gap: 0;
     }
 
-    .services ul li,
-    .howArrive ul li {
-      /* margin-right: 1.5rem; */
-    }
+
   }
 `;

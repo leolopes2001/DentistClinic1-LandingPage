@@ -111,24 +111,36 @@ export const Container = styled.div`
 
   ${LogoStyled} {
     margin-top: ${convertToRem(80)};
+    margin-bottom: 21px;
+
+    h1 {
+      color: '#767676';
+    }
+  }
+
+  > ${BaseTitle}{
+    margin-top: 1rem;
   }
 
   > ${Text} {
     width: 262px;
     height: 60px;
+    margin-top: 8px;
     @media (min-width: 1200px) {
+      margin-top: 16px;
       width: 449px;
       height: 96px;
     }
   }
 
   ${LinkStyled} {
-    margin-top: ${convertToRem(32)};
-
+    margin-top: ${convertToRem(16)};
+    border-radius: 10px;
     svg {
       transform: translateX(-8px);
     }
     @media (min-width: 1200px) {
+      border-radius: 16px;
       margin-top: ${convertToRem(32)};
     }
   }

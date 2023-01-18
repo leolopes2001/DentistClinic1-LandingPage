@@ -4,22 +4,19 @@ import { BaseTitle } from '../../../components/common/Title/style';
 import convertToRem from '../../../utils/convertToRem';
 
 export const GridHeader = styled.div`
-  overflow-x: hidden;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5 1fr 1fr;
   width: 100%;
-  margin-top: ${convertToRem(13)};
-  padding: 1rem;
   min-width: ${convertToRem(400)};
-
+  margin-bottom: 2rem;
   > div {
     padding-top: 0.5rem;
   }
 
   > ${Text} {
     width: 269px;
-    height: 40px;
     display: flex;
     align-items: flex-start;
     padding-top: 8px;
@@ -79,6 +76,11 @@ export const SectionStyled = styled.section`
   overflow: hidden;
   padding-top: 2rem;
   background-color: ${({ theme }) => theme.colors.background};
+  .content{
+    padding-bottom: 0;
+  }
+
+
 
   .list_servies {
     display: flex;
@@ -86,5 +88,9 @@ export const SectionStyled = styled.section`
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 4rem;
+  }
+
+  @media (min-width: 1200px){
+    padding-bottom: 1rem;
   }
 `;
