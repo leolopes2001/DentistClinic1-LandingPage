@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+import { ButtonStyled } from '../../../components/common/Button/style';
+import { LinkStyled } from '../../../components/common/Link/style';
+import { Text } from '../../../components/common/Text/style';
+import { BaseTitle } from '../../../components/common/Title/style';
+import { LogoStyled } from '../../../components/Logo/style';
 import convertToRem from '../../../utils/convertToRem';
 
 export const HomeStyled = styled.main`
@@ -13,9 +18,6 @@ export const HomeStyled = styled.main`
   > .content {
     background-color: ${({ theme }) => theme.colors.background2};
   }
-
-  
-  
 `;
 
 export const AsideDiv = styled.div`
@@ -47,7 +49,9 @@ export const AsideDiv = styled.div`
 
 export const Container = styled.div`
   position: relative;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   min-height: 100vh;
   max-height: 100vh;
 
@@ -79,7 +83,7 @@ export const Container = styled.div`
       width: ${convertToRem(198)};
       height: ${convertToRem(100)};
       top: 80%;
-      left: 30%;
+      left: 31%;
       p {
         font-weight: 500;
         font-size: ${convertToRem(18)};
@@ -104,5 +108,28 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.background};
   position: relative;
   padding-left: 1rem;
-  padding-top: ${convertToRem(32)};
+
+  ${LogoStyled} {
+    margin-top: ${convertToRem(80)};
+  }
+
+  > ${Text} {
+    width: 262px;
+    height: 60px;
+    @media (min-width: 1200px) {
+      width: 449px;
+      height: 96px;
+    }
+  }
+
+  ${LinkStyled} {
+    margin-top: ${convertToRem(32)};
+
+    svg {
+      transform: translateX(-8px);
+    }
+    @media (min-width: 1200px) {
+      margin-top: ${convertToRem(32)};
+    }
+  }
 `;

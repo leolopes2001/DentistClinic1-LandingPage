@@ -20,31 +20,37 @@ const TitleVariant = {
       font-size: ${convertToRem(28)};
     }
   `,
+  logo_mini: css`
+
+    
+  `,
 
   title1: css`
-    width: ${convertToRem(289)};
-    position: relative;
-    margin-bottom: ${convertToRem(12)};
-    z-index: 999;
+    width: 289px;
+    height: 92px;
     font-weight: 700;
-    font-size: ${convertToRem(32)};
-    line-height: ${convertToRem(46)};
-    color: ${({ theme }) => theme.colors.grey0};
+    font-size: 32px;
+    line-height: 46px;
+    position: relative;
+    z-index: 999;
+    color: #2e3538;
 
     @media (min-width: 1200px) {
-      font-size: ${convertToRem(58)};
-      margin-top: 1rem;
-      line-height: ${convertToRem(80)};
-      width: ${convertToRem(688)};
+      width: 688px;
+      height: 200px;
+      font-size: 68px;
+      line-height: 100px;
     }
   `,
 
   title2: css`
     font-family: 'Red Hat Display';
+    font-style: normal;
     font-weight: 500;
     font-size: ${convertToRem(14)};
     line-height: ${convertToRem(19)};
     color: ${({ theme }) => theme.colors.grey2};
+
     @media (min-width: 1200px) {
       font-size: ${convertToRem(24)};
       line-height: ${convertToRem(32)};
@@ -52,14 +58,19 @@ const TitleVariant = {
   `,
 
   title3: css`
+    font-family: 'Raleway';
+    font-style: normal;
     font-weight: 700;
-    font-size: ${convertToRem(28)};
-    line-height: ${convertToRem(40)};
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
+    z-index: 999;
     color: ${({ theme }) => theme.colors.grey2};
 
     @media (min-width: 1200px) {
-      font-size: ${convertToRem(56)};
-      line-height: ${convertToRem(72)};
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 92px;
     }
   `,
 
@@ -103,7 +114,6 @@ const TitleVariant = {
   `,
 
   numberCompany: css`
-  
     font-weight: 400;
     font-size: ${convertToRem(20)};
     line-height: ${convertToRem(26)};
@@ -111,6 +121,9 @@ const TitleVariant = {
     min-width: ${convertToRem(340)};
     max-width: ${convertToRem(340)};
     color: ${({ theme }) => theme.colors.grey5};
+
+    font-family: 'Red Hat Display';
+    font-style: normal;
   `,
 };
 
@@ -126,26 +139,23 @@ export const Wrapper = styled.div`
     border-radius: 50%;
     background-color: ${({ theme }) => theme.colors.primary};
     margin-right: ${convertToRem(8)};
+
+    @media (min-width: 1200px) {
+      width: ${convertToRem(10)};
+      height: ${convertToRem(10)};
+      margin-right: ${convertToRem(10)};
+    }
   }
 
   > .line {
-    min-width: ${convertToRem(240)};
-    width: 60%;
-    max-width: ${convertToRem(240)};
-    margin-top: ${convertToRem(10)};
+    width: 150px;
+    margin-top: ${convertToRem(8)};
     height: ${convertToRem(1)};
     background-color: ${({ theme }) => theme.colors.primary};
 
-    @media (min-width: 600px) {
-      min-width: ${convertToRem(250)};
-      width: 50%;
-      max-width: ${convertToRem(250)};
-    }
-
     @media (min-width: 1200px) {
-      min-width: ${convertToRem(300)};
-      width: 65%;
-      max-width: ${convertToRem(600)};
+      margin-top: ${convertToRem(16)};
+      width: 250px;
     }
   }
 `;

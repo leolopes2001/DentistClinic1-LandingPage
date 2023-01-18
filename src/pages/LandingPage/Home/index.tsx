@@ -18,7 +18,7 @@ const Home = ({ innerRef, id }: IPages) => {
   return (
     <HomeStyled ref={innerRef} id={id}>
       <Container className='content'>
-        {width > 1200 && <Logo isHome={true} style={{ paddingTop: '4rem' }} />}
+        {width > 1200 && <Logo isHome={true} />}
         <Title variant='title1' tag='h3' data-aos='fade-right'>
           Faça um checkup odontológico hoje
         </Title>
@@ -27,7 +27,8 @@ const Home = ({ innerRef, id }: IPages) => {
           especialistas e te indicar as melhores opções de tratamentos.
         </Text>
         <Link href='' variant='primary' data-aos='fade-left'>
-          <MdOutlineArrowForwardIos /> Agendar Agora
+          {width > 1200 && <MdOutlineArrowForwardIos />}
+          Agendar Agora
         </Link>
         <CircleIconPlus
           variant='one'
@@ -47,7 +48,7 @@ const Home = ({ innerRef, id }: IPages) => {
           icon='randomLogo'
           size={width > 1200 ? 'desktop' : 'mobile'}
           text1='Clinica'
-          label='N°1'
+          label='N° 1'
           text2='da cidade'
           className='icon-three'
         />

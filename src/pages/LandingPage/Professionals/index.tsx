@@ -32,7 +32,7 @@ const Professionals = ({ innerRef, id }: IPages) => {
           <Title tag='h3' variant='title3' className='general_title'>
             Vejas os seus dentistas
           </Title>
-          <Text variant='text2' data-aos='fade-left'>
+          <Text variant='text5' data-aos='fade-left'>
             Time formado por especialistas e profissionais experientes
           </Text>
         </GridHeader>

@@ -1,4 +1,6 @@
 import styled, { css } from 'styled-components';
+import { Text } from '../common/Text/style';
+import { CardPatientStyled } from './PacientSaysSlider/CardPatient/style';
 
 const SliderWrapVariant = {
   type1: css`
@@ -69,17 +71,18 @@ const SliderWrapVariant = {
   `,
   type3: css`
     width: 100%;
-  
+
     max-width: 530px;
 
     .video_card {
       position: relative;
       border-radius: 2rem;
       width: 100%;
-      
 
       max-width: 300px;
-      height: 420px;
+      /* height: 420px; */
+
+      height: 509px;
 
       img {
         object-fit: cover;
@@ -92,7 +95,6 @@ const SliderWrapVariant = {
     .swiper {
       justify-content: end;
       align-items: flex-end;
-     
     }
 
     .swiper-slide {
@@ -142,7 +144,6 @@ const SliderWrapVariant = {
       margin-top: 0;
       margin-bottom: 1rem;
       padding-bottom: 4rem;
-      padding: 0 1rem;
 
       @media (min-width: 900px) {
         min-height: 290px;
@@ -160,11 +161,10 @@ const SliderWrapVariant = {
       font-size: 18px;
       background-color: ${({ theme }) => theme.colors.background};
 
-      & > div {
+      & > ${CardPatientStyled} {
         background: #fff;
-        min-width: 322px;
-        max-width: 322px;
-        height: 203px;
+        width: 303px;
+        height: 243px;
         border-radius: 20px;
         padding: 1rem;
 
@@ -173,29 +173,49 @@ const SliderWrapVariant = {
         justify-content: space-evenly;
         background-color: ${({ theme }) => theme.colors.whiteFixed};
 
-        .patient {
+        & > .patient {
           display: flex;
           align-items: center;
           gap: 1rem;
           height: 50px;
-        }
-        .patient img {
-          object-fit: cover;
-          width: 50px;
-          border-radius: 50%;
-          background-color: ${({ theme }) => theme.colors.primary};
-        }
 
-        .patient > div {
-          height: 50px;
-          display: flex;
-          flex-direction: column;
-          align-items: right;
-          justify-content: space-evenly;
-          h6,
-          label {
-            text-align: left;
-            justify-content: flex-start;
+          img {
+            object-fit: cover;
+            width: 50px;
+            border-radius: 50%;
+            background-color: ${({ theme }) => theme.colors.primary};
+          }
+
+          > div {
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+            justify-content: space-evenly;
+
+            label,
+            h6 {
+              text-align: left;
+              justify-content: flex-start;
+            }
+
+            h6 {
+              font-family: 'Red Hat Display';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 21px;
+              color: #373f43;
+            }
+
+            label {
+              font-family: 'Raleway';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 14px;
+              color: #606f76;
+            }
           }
         }
 
@@ -208,9 +228,21 @@ const SliderWrapVariant = {
             height: 15px;
           }
         }
-        .opinion {
+        > ${Text} {
+          font-family: 'Red Hat Display';
           font-style: italic;
+          text-align: justify;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 20px;
+          color: #49545a;
         }
+
+        @media (min-width: 350px) {
+          width: 343px;
+          height: 203px;
+        }
+
         @media (min-width: 900px) {
           min-width: 467px;
           max-width: 467px;
@@ -233,6 +265,33 @@ const SliderWrapVariant = {
               width: 22px;
               height: 22px;
             }
+          }
+        }
+
+        @media (min-width: 1200px) {
+          width: 467px;
+          height: 321px;
+
+          & > .patient {
+            width: 467px;
+
+            > div h6 {
+              font-size: 20px;
+              line-height: 26px;
+            }
+            > div label {
+              font-size: 18px;
+              line-height: 21px;
+            }
+          }
+          > ${Text} {
+            font-family: 'Red Hat Display';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            color: #49545a;
+           
           }
         }
       }

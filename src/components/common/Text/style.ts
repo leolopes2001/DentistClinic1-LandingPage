@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import convertToRem from '../../../utils/convertToRem';
 
 interface ITextVariant {
-  variant: 'text1' | 'text2' | 'text3' | 'text4';
+  variant: 'text1' | 'text2' | 'text3' | 'text4' | 'text5';
 }
 interface ILabelVariant {
   variant: 'label1';
@@ -11,7 +11,8 @@ interface ILabelVariant {
 export const TextVariant = {
   text1: css`
     font-family: 'Red Hat Display';
-    width: ${convertToRem(262)};
+    font-style: normal;
+
     font-weight: 400;
     font-size: ${convertToRem(12)};
     line-height: ${convertToRem(20)};
@@ -20,8 +21,8 @@ export const TextVariant = {
     z-index: 999;
 
     @media (min-width: 1200px) {
-      width: ${convertToRem(449)};
-      height: ${convertToRem(96)};
+      /* width: ${convertToRem(449)};
+      height: ${convertToRem(96)}; */
       font-size: ${convertToRem(20)};
       line-height: ${convertToRem(32)};
     }
@@ -29,21 +30,15 @@ export const TextVariant = {
 
   text2: css`
     font-family: 'Red Hat Display';
-    width: 100%;
+    font-style: normal;
     font-weight: 400;
     font-size: ${convertToRem(12)};
-    height: auto;
     line-height: ${convertToRem(20)};
     color: ${({ theme }) => theme.colors.grey5};
-    text-align: justify;
-    display: inline-flex;
 
     @media (min-width: 1200px) {
       font-size: ${convertToRem(20)};
-      line-height: ${convertToRem(32)};
-
-      display: flex;
-      align-items: flex-end;
+      line-height: ${convertToRem(34)};
     }
   `,
 
@@ -63,7 +58,9 @@ export const TextVariant = {
   `,
 
   text4: css`
-    font-weight: 700;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;  
     font-size: ${convertToRem(24)};
     line-height: ${convertToRem(32)};
     letter-spacing: ${convertToRem(0.374)};
@@ -74,6 +71,23 @@ export const TextVariant = {
     text-align: center;
     position: absolute;
     transform: translate(-50%, -10%);
+  `,
+
+  text5: css`
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Manrope';
+    font-size: 12px;
+    line-height: 20px;
+    color: #646770;
+
+    @media (min-width: 1200px) {
+      width: 496px;
+      height: 32px;
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+    }
   `,
 };
 

@@ -5,7 +5,7 @@ import { GridHeader, SectionStyled } from './style';
 import { benefits } from '../../../components-mock.json';
 import { IPages } from '..';
 
-const Benefits = ({innerRef}:IPages) => (
+const Benefits = ({ innerRef }: IPages) => (
   <SectionStyled ref={innerRef}>
     <div className='content'>
       <GridHeader>
@@ -14,7 +14,7 @@ const Benefits = ({innerRef}:IPages) => (
             Na clínica Agenda Consulta
           </Title>
         </div>
-        <Title tag='h3' variant='title3' className='general_title'>
+        <Title tag='h3' variant='title3'>
           Benefícios e facilidades
         </Title>
         <Text variant='text2' data-aos='fade-left'>

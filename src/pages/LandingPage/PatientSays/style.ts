@@ -21,6 +21,9 @@ export const GridHeader = styled.div`
   p {
     min-width: ${convertToRem(220)};
     max-width: ${convertToRem(220)};
+    margin-top: 8px;
+
+    
   }
 
   @media (min-width: 345px) {
@@ -53,6 +56,7 @@ export const GridHeader = styled.div`
     }
 
     p {
+      margin-top: 32px;
       min-width: ${convertToRem(450)};
       max-width: ${convertToRem(450)};
     }

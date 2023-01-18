@@ -1,4 +1,4 @@
-import CompanyLogo from '../../../assets/svg/agendaConsultaLogo.svg';
+
 import Link from '../../../components/common/Link';
 import MobileMenu from '../../../components/MobileMenu';
 import useWindowSize from '../../../hooks/useWindowSize';

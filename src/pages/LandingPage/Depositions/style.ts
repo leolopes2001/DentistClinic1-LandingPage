@@ -1,25 +1,12 @@
 import styled from 'styled-components';
+import { Text } from '../../../components/common/Text/style';
+import { BaseTitle } from '../../../components/common/Title/style';
 import convertToRem from '../../../utils/convertToRem';
 
 export const StyledSection = styled.section`
   overflow: hidden;
 
   background-color: ${({ theme }) => theme.colors.background};
-
-  .general_title {
-    width: 100%;
-    max-width: ${convertToRem(300)};
-  }
-  @media (min-width: 320px) {
-    .general_title {
-      max-width: ${convertToRem(320)};
-    }
-  }
-  @media (min-width: 450px) {
-    .general_title {
-      max-width: ${convertToRem(340)};
-    }
-  }
 
   > .content {
     @media (min-width: 700px) {
@@ -45,18 +32,14 @@ export const GridHeader = styled.div`
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
-  p {
-    max-width: ${convertToRem(222)};
-  }
 
-  > .general_title {
+  > ${BaseTitle} {
     margin-top: 1rem;
+    margin-bottom: 8px;
   }
 
-  @media (min-width: 300px) {
-    P {
-      max-width: ${convertToRem(262)};
-    }
+  > ${Text} {
+    margin-bottom: 16px;
   }
 
   @media (max-width: 1000px) {
@@ -64,11 +47,17 @@ export const GridHeader = styled.div`
   }
 
   @media (min-width: 1200px) {
-    .general_title {
-      min-width: ${convertToRem(650)};
+    > ${BaseTitle} {
+      margin: 1rem 0px 0px 0px;
+      font-size: 45px;
+      line-height: 80px;
+      width: 525px;
+      height: 160px;
     }
-    p {
-      max-width: ${convertToRem(600)};
+
+    > ${Text} {
+      width: 482px;
+      height: 102px;
     }
   }
 `;

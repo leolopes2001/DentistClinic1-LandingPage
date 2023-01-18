@@ -4,8 +4,7 @@ import Patient1 from '../../../../assets/svg/patients/patient1.svg';
 import Patient2 from '../../../../assets/svg/patients/patient2.svg';
 import { Label, Text } from '../../../common/Text/style';
 import Title from '../../../common/Title';
-import Star from "../../../../assets/svg/common/star.svg"
-
+import Star from '../../../../assets/svg/common/star.svg';
 
 const ImagePatients = [Patient0, Patient1, Patient2];
 
@@ -29,15 +28,13 @@ const CardPatient = ({ id, name, job, opinion }: ICardPatient) => {
         </div>
       </div>
       <div className='starts'>
-        <img src={Star} alt="Star" />
-        <img src={Star} alt="Star" />
-        <img src={Star} alt="Star" />
-        <img src={Star} alt="Star" />
-        <img src={Star} alt="Star" />
+        <img src={Star} alt='Star' />
+        <img src={Star} alt='Star' />
+        <img src={Star} alt='Star' />
+        <img src={Star} alt='Star' />
+        <img src={Star} alt='Star' />
       </div>
-      <Text variant='text2' className='opinion'>
-        {opinion}
-      </Text>
+      <Text variant='text2'>{opinion}</Text>
     </CardPatientStyled>
   );
 };

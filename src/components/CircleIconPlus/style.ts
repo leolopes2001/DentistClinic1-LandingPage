@@ -135,7 +135,7 @@ const ContainerVariantDesktop = {
   `,
   two: css`
     font-family: 'Inter';
- 
+
     position: absolute;
     width: ${convertToRem(108.5)};
     height: ${convertToRem(49.57)};
@@ -191,12 +191,19 @@ const ContainerVariantDesktop = {
     }
 
     .text {
-      font-weight: 400;
-      font-size: ${convertToRem(7.75)};
-      line-height: ${convertToRem(10)};
+      color: ${({ theme }) => theme.colors.grey4};
+      font-family: 'Red Hat Display';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11.0916px;
+      line-height: 15px;
       text-align: center;
-      color: ${({theme}) => theme.colors.grey5};
-      width: 50px;
+
+      @media (min-width: 1200px) {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+      }
     }
 
     .label {
@@ -204,7 +211,7 @@ const ContainerVariantDesktop = {
       font-size: ${convertToRem(7.75)};
       line-height: ${convertToRem(10)};
       text-align: center;
-      color: ${({theme}) => theme.colors.grey2};
+      color: ${({ theme }) => theme.colors.grey2};
     }
   `,
 };

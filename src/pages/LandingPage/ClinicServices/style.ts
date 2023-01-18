@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Text } from '../../../components/common/Text/style';
+import { BaseTitle } from '../../../components/common/Title/style';
 import convertToRem from '../../../utils/convertToRem';
 
 export const GridHeader = styled.div`
@@ -11,18 +13,16 @@ export const GridHeader = styled.div`
   padding: 1rem;
   min-width: ${convertToRem(400)};
 
-  > .general_title {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: flex-start;
-    max-width: ${convertToRem(350)};
+  > div {
+    padding-top: 0.5rem;
   }
 
-  > p {
-    max-width: ${convertToRem(230)};
-    vertical-align: baseline;
+  > ${Text} {
+    width: 269px;
+    height: 40px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 8px;
 
     @media (min-width: 314px) {
       max-width: ${convertToRem(280)};
@@ -32,11 +32,36 @@ export const GridHeader = styled.div`
     }
     @media (min-width: 1200px) {
       max-width: ${convertToRem(500)};
+      padding-top: 32px;
+      width: 482px;
+      height: 64px;
     }
   }
-  @media (min-width: 480px) {
-    > .general_title {
-      min-width: ${convertToRem(450)};
+
+  > ${BaseTitle} {
+    width: 269px;
+    height: 80px;
+    margin-top: 16px;
+
+    @media (min-width: 480px) {
+      > ${BaseTitle} {
+        min-width: ${convertToRem(450)};
+      }
+    }
+
+    @media (min-width: 1200px) {
+      width: 585px;
+      height: 184px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 685px;
+      grid-template-columns: 1/2;
+
+      grid-column: 1/2;
+      grid-row: 1/3;
+      padding: 0;
+      margin: 0;
     }
   }
 
@@ -47,16 +72,6 @@ export const GridHeader = styled.div`
     margin-top: ${convertToRem(43)};
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 1fr;
-
-    .general_title {
-      width: 685px;
-      grid-template-columns: 1/2;
-
-      grid-column: 1/2;
-      grid-row: 1/3;
-      padding: 0;
-      margin: 0;
-    }
   }
 `;
 

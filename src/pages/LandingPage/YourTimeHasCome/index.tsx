@@ -24,7 +24,7 @@ const YourTimeHasCome = ({ innerRef, id }: IPages) => {
               variant='three'
               icon='addPerson'
               size={width > 1200 ? 'desktop' : 'mobile'}
-              label='Dr. Thiago'
+              text1='Dr. Thiago'
               text2='Cirurgião dentista'
               className='icon-one'
             />
@@ -39,7 +39,7 @@ const YourTimeHasCome = ({ innerRef, id }: IPages) => {
               className='icon-three'
             />
 
-            <div className='icon-four'>
+            <div className='icon-four' data-aos='fade-right'>
               <div className='img'>
                 <img
                   src={width > 1200 ? VerifyDesktop : VerifyMobile}
@@ -66,7 +66,7 @@ const YourTimeHasCome = ({ innerRef, id }: IPages) => {
               A sua hora chegou!
             </Title>
           </div>
-          <Title tag='h3' variant='title3' className='general_title'>
+          <Title tag='h3' variant='title3'>
             Vamos Cuidar da sua Saúde Bucal
           </Title>
           <Text variant='text2' data-aos='fade-left'>
@@ -74,7 +74,7 @@ const YourTimeHasCome = ({ innerRef, id }: IPages) => {
             suficiente para manter os dentes e a boca saudáveis. Na verdade,
             você precisar visitar um dentista regularmente.
           </Text>
-          <Link href='' variant='primary'>
+          <Link href='' variant={width > 1200 ? 'primary' : 'secondary'}>
             Eu Quero <MdOutlineArrowForwardIos />
           </Link>
         </GridHeader>

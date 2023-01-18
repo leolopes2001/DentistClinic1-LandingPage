@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Text } from '../../../components/common/Text/style';
 import convertToRem from '../../../utils/convertToRem';
 
 export const StyledSection = styled.section`
@@ -66,8 +67,18 @@ export const GridHeader = styled.div`
     max-width: ${convertToRem(250)};
   }
 
-  p {
-    max-width: ${convertToRem(220)};
+  ${Text} {
+    font-family: 'Manrope';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #646770;
+    margin-top: 15px;
+    
+
+
   }
 
   @media (min-width: 400px) {
@@ -78,21 +89,19 @@ export const GridHeader = styled.div`
       max-width: ${convertToRem(400)};
     }
 
-    p {
-      min-width: ${convertToRem(400)};
-    }
+  
   }
 
   @media (min-width: 1200px) {
     padding: 0;
     margin-top: ${convertToRem(43)};
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 100px 100px;
-
+    grid-template-rows: 1fr 0.5fr;
+    margin-bottom: 66px;
     .general_title {
       width: 100%;
       margin-top: 0;
-      line-height: normal;
+      line-height: 80px;
       display: flex;
       min-width: ${convertToRem(685)};
       justify-content: end;
@@ -100,7 +109,7 @@ export const GridHeader = styled.div`
       justify-self: end;
     }
 
-    p {
+    ${Text} {
       min-width: 100%;
       grid-column: 1/3;
 

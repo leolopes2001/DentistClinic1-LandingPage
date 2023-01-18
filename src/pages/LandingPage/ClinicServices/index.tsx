@@ -22,7 +22,7 @@ const ClinicService = ({
               Clínica Geral
             </Title>
           </div>
-          <Title tag='h3' variant='title3' className='general_title'>
+          <Title tag='h3' variant='title3'>
             Veja os nossos tratamentos
           </Title>
           <Text variant='text2' data-aos='fade-left'>
