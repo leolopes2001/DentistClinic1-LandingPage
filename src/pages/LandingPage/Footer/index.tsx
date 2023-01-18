@@ -40,7 +40,15 @@ const Footer = ({ innerRef, id }: IPages) => {
             {width < 1200 && (
               <>
                 <li className='text'>{phone}</li>
-                <li className='text'>{company}</li>
+                <li className='text'>
+                  <a
+                    href='https://agendaconsulta.com/'
+                    target='_blank'
+                    className='additional_text_3'
+                  >
+                    {company}
+                  </a>
+                </li>
               </>
             )}
           </ul>
@@ -59,7 +67,7 @@ const Footer = ({ innerRef, id }: IPages) => {
               {phone} <IoLogoWhatsapp />
             </p>
             <a
-              href='agendaconsulta.com'
+              href='https://agendaconsulta.com/'
               target='_blank'
               className='additional_text_3'
             >
