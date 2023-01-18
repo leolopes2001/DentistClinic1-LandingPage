@@ -9,6 +9,7 @@ export const StyledSection = styled.section`
   overflow: hidden;
   padding-top: 5rem;
   background-color: ${({ theme }) => theme.colors.background};
+  margin-bottom: 28px;
 
   > .content {
     min-width: 0;
