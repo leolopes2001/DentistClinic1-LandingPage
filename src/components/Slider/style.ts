@@ -78,9 +78,9 @@ const SliderWrapVariant = {
       position: relative;
       border-radius: 2rem;
       width: 100%;
-
+      min-width: 190px;
       max-width: 300px;
-      /* height: 420px; */
+     gap: 1rem;
 
       height: 509px;
 

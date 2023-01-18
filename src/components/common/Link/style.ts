@@ -108,7 +108,6 @@ const LinkVariant = {
   youtube: css`
     font-family: 'Poppins';
     inset: 0;
-    padding: 8px 16px;
     gap: ${convertToRem(8)};
     position: absolute;
     width: ${convertToRem(179)};
@@ -123,6 +122,7 @@ const LinkVariant = {
     left: 50%;
     transform: translate(-50%);
     transition: all 400ms;
+    min-width: 178px;
 
     > svg:nth-child(1) {
       width: ${convertToRem(25)};
